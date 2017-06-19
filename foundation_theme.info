@@ -1,0 +1,29 @@
+name = Foundation Theme
+description = Foundation 6.3 Drupal 7 theme
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/main.css
+stylesheets[all][] = css/font-awesome.min.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/foundation.min.js
+scripts[] = js/custom.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
