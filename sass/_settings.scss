@@ -40,7 +40,6 @@
 //  35. Title Bar
 //  36. Tooltip
 //  37. Top Bar
-
 @import "../node_modules/foundation-sites/scss/util/util";
 
 // 1. Global
@@ -121,8 +120,8 @@ $header-styles: (
                 'h6': ('font-size': 16),
         ),
         medium: (
-                'h1': ('font-size': 48),
-                'h2': ('font-size': 40),
+                'h1': ('font-size': 40),
+                'h2': ('font-size': 36),
                 'h3': ('font-size': 31),
                 'h4': ('font-size': 25),
                 'h5': ('font-size': 20),

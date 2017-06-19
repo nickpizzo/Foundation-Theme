@@ -1,6 +1,7 @@
 <div class="page-wrap">
   <header class="l-header" role="banner">
 
+	  <!-- Desktop Nav Bar -->
     <div class="l-branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -30,10 +31,7 @@
       <?php print render($page['navigation']); ?>
     </div>
   </header>
-
-  <?php print render($page['sidebar_first']); ?>
-  <?php print render($page['sidebar_second']); ?>
-
+	
   <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
@@ -52,6 +50,8 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
+      <?php print render($page['sidebar_first']); ?>
+      <?php print render($page['sidebar_second']); ?>
     </div>
   </div>
 
