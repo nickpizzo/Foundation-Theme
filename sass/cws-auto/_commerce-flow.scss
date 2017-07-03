@@ -81,3 +81,52 @@ fieldset {
   }
 }
 
+table {
+  border: 0;
+  border-spacing: 0;
+  margin: 10px 0;
+  width: 100%;
+  display: table;
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    th {
+      border-bottom: 1px solid white;
+      border-top: 1px solid #dddddd;
+      font-weight: bold;
+      color: #707070;
+      text-shadow: white 1px 1px 0;
+      background: linear-gradient(to bottom, #ededed 0%,#dedede 100%);
+      padding: 10px 15px;
+    }
+  }
+  tbody {
+    tr {
+      background-color: #F9F9F9;
+      border-bottom: 1px solid #EDEDED !important;
+      border-top: 1px solid white;
+      &.odd {
+        background-color: #f4f4f4;
+      }
+      &.even {
+        background-color: #f9f9f9;
+      }
+      td {
+        padding: 15px;
+        border: none;
+        a {
+          text-decoration: none;
+        }
+        input[type=text] {
+
+        }
+        div {
+          input[type=text] {
+          }
+        }
+      }
+    }
+  }
+}
+

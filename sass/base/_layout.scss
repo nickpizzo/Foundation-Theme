@@ -1,0 +1,19 @@
+.page-wrap {
+  background: papayawhip;
+  @include breakpoint(small up) {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  @include breakpoint(medium up) {
+    max-width: 435px;
+    margin: 0 auto;
+  }
+  @include breakpoint(large up) {
+    max-width: 735px;
+    margin: 0 auto;
+  }
+  @include breakpoint(xlarge up) {
+    max-width: $global-width;
+    margin: 0 auto;
+  }
+}

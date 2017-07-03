@@ -1,0 +1,283 @@
+/**
+ * Order Review
+ */
+@media only screen and (max-width: 775px) {
+  /* Force table to not be like tables anymore */
+  body.page-user table, body.page-user thead,
+  body.page-user tbody,
+  body.page-user th,
+  body.page-user td,
+  body.page-user tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  body.page-user thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  body.page-user tr { border: 1px solid #ccc; }
+
+  body.page-user td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  body.page-user td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0px;
+    left: 12px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  */
+  body.page-user td:nth-of-type(1):before { content: "Product"; }
+  body.page-user td:nth-of-type(2):before { content: "Price"; }
+  body.page-user td:nth-of-type(3):before { content: "Quantity"; }
+  body.page-user td:nth-of-type(4):before { content: "Total"; }
+  body.page-user td:nth-of-type(5):before { content: "Total"; }
+
+  body.page-user table, body.page-user thead,
+  body.page-user tbody,
+  body.page-user th,
+  body.page-user td,
+  body.page-user tr {
+    display: block;
+  }
+  table.commerce-price-formatted-components {
+    display: none;
+  }
+}
+
+/**
+ * Checkout
+ */
+@media only screen and (max-width: 775px) {
+
+  td {
+    padding:0;
+  }
+
+  body.node-type-cobra-schematic table, body.node-type-cobra-schematic thead,
+  body.node-type-cobra-schematic tbody,
+  body.node-type-cobra-schematic th,
+  body.node-type-cobra-schematic td,
+  body.node-type-cobra-schematic tr {
+    display: block;
+  }
+
+  body.node-type-cobra-schematic thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  body.node-type-cobra-schematic tr { border: 1px solid #ccc; }
+
+  body.node-type-cobra-schematic td {
+
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  body.node-type-cobra-schematic td:before {
+
+    position: absolute;
+
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  body.node-type-cobra-schematic td:nth-of-type(1):before { content: "Key"; }
+  body.node-type-cobra-schematic td:nth-of-type(2):before { content: "Title"; }
+  body.node-type-cobra-schematic td:nth-of-type(3):before { content: "Price"; }
+  body.node-type-cobra-schematic td:nth-of-type(4):before { content: "Quantity"; }
+
+  /* Force table to not be like tables anymore */
+  body.page-cart table, body.page-cart thead,
+  body.page-cart tbody,
+  body.page-cart th,
+  body.page-cart td,
+  body.page-cart tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  body.page-cart thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  body.page-cart tr { border: 1px solid #ccc; }
+
+  body.page-cart td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  body.page-cart td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0px;
+    left: 12px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  */
+  body.page-cart td:nth-of-type(1):before { content: "Product"; }
+  body.page-cart td:nth-of-type(2):before { content: "Price"; }
+  body.page-cart td:nth-of-type(3):before { content: "Quantity"; }
+  body.page-cart td:nth-of-type(4):before { content: "Remove"; }
+  body.page-cart td:nth-of-type(5):before { content: "Total"; }
+
+  body.page-cart table, body.page-cart thead,
+  body.page-cart tbody,
+  body.page-cart th,
+  body.page-cart td,
+  body.page-cart tr {
+    display: block;
+  }
+
+  body.page-checkout .view-content table, body.page-checkout .view-content thead,
+  body.page-checkout .view-content tbody,
+  body.page-checkout .view-content th,
+  body.page-checkout .view-content td,
+  body.page-checkout .view-content tr {
+    display: block;
+  }
+
+  body.page-checkout .view-content thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  body.page-checkout .view-content tr { border: 1px solid #ccc; }
+
+  body.page-checkout .view-content td {
+
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  body.page-checkout .view-content td:before {
+
+    position: absolute;
+
+    top: 0px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  body.page-checkout .view-content td:nth-of-type(1):before { content: "Product"; }
+  body.page-checkout .view-content td:nth-of-type(2):before { content: "Price"; }
+  body.page-checkout .view-content td:nth-of-type(3):before { content: "Quantity"; }
+  body.page-checkout .view-content td:nth-of-type(4):before { content: "Total"; }
+
+  body.page-checkout .view-content td.views-align-right {
+    text-align: left;
+  }
+
+  .option-button-wrapper {
+    float:none;
+  }
+
+  div.addressfield-container-inline > div.form-item {
+    margin-right: 0;
+  }
+
+  .body-checkout input[type="text"] {
+    width:280px !important;
+  }
+
+  .form-item-commerce-coupon-coupon-code input {
+    width:90% !important;
+  }
+
+}
+
+@media only screen and (max-width: 479px) {
+  .mobile-search {
+    width:65%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body.page-checkout #body-wrap .container {
+    margin:0 auto;
+  }
+  .mobile-search {
+    width:60%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  table.checkout-review {
+    tbody,
+    tr,
+    td {
+      width: 300px;
+      display: block;
+    }
+    table.views-table {
+      tr,
+      td {
+        width: 266px;
+        overflow: auto;
+      }
+    }
+    table.commerce-price-formatted-components {
+      tr,
+      td {
+        width: 266px;
+      }
+    }
+  }
+}
+
+//fix review order table on mobile
+.field-name-commerce-order-total {
+  .commerce-price-formatted-components {
+    margin-left: 0 !important;
+    width: 100%;
+    .component-total {
+      &:before {
+        content: '';
+      }
+    }
+    .component-title {
+      text-align: right;
+      &:before {
+        content: '';
+      }
+    }
+  }
+}

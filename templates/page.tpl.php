@@ -1,39 +1,42 @@
 <div class="page-wrap">
-  <header class="l-header" role="banner">
+  <header class="header" role="banner">
 
 	  <!-- Desktop Nav Bar -->
-    <div class="l-branding">
+    <div class="branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>
       <?php print render($page['branding']); ?>
     </div>
+  </header>
 
+	<div id="main-nav">
     <?php print render($page['navigation']); ?>
+	</div>
 
-    <!-- Mobile Nav Bar -->
-    <div class="off-canvas-content" data-off-canvas-content>
-      <div class="title-bar">
-        <div class="title-bar-left">
-          <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
-          <span class="title-bar-title">Foundation title bar with top off-canvas</span>
-        </div>
+  <!-- Mobile Nav Bar -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="title-bar">
+      <div class="title-bar-left">
+        <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+<!--          <span class="title-bar-title">Foundation title bar with top off-canvas</span>-->
       </div>
     </div>
+  </div>
 
-    <!-- Mobile Nav Hidden Menu -->
-    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-      <!-- Close button -->
-      <button class="close-button" aria-label="Close menu" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <!-- Menu -->
-      <?php print render($page['navigation']); ?>
-    </div>
-  </header>
+  <!-- Mobile Nav Hidden Menu -->
+  <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- Close button -->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <!-- Menu -->
+    <?php print render($page['navigation']); ?>
+  </div>
+
 	
-  <div class="l-main">
-    <div class="l-content" role="main">
+  <div class="main">
+    <div class="content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -55,7 +58,7 @@
     </div>
   </div>
 
-  <footer class="l-footer" role="contentinfo">
+  <footer class="footer" role="contentinfo">
     <?php print render($page['footer']); ?>
   </footer>
 </div>
