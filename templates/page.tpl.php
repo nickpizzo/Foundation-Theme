@@ -34,31 +34,50 @@
     <?php print render($page['navigation']); ?>
   </div>
 
-	
-  <div class="main">
-    <div class="content" role="main">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
-      <?php print render($page['sidebar_first']); ?>
-      <?php print render($page['sidebar_second']); ?>
-    </div>
-  </div>
 
-  <footer class="footer" role="contentinfo">
-    <?php print render($page['footer']); ?>
-  </footer>
+  <?php print $messages; ?>
+  <?php print render($page['highlighted']); ?>
+	<!--      --><?php //print $breadcrumb; ?>
+  <?php print render($title_suffix); ?>
+
+	<div class="main">
+		<div class="row content" role="main">
+			<div id="top-content">
+        <?php print render($page['sidebar_first']); ?>
+        <?php print render($page['sidebar_second']); ?>
+        <?php print render($title_prefix); ?>
+        <?php if ($title): ?>
+					<h1><?php print $title; ?></h1>
+        <?php endif; ?>
+			</div>
+
+			<div id="main-content">
+        <?php print render($tabs); ?>
+        <?php print render($page['help']); ?>
+        <?php if ($action_links): ?>
+					<ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+        <?php print render($page['content']); ?>
+        <?php print $feed_icons; ?>
+			</div>
+
+		</div>
+	</div>
+
+	<footer id="footer-wrap">
+		<div class="row">
+      <?php print render($page['footer_first']); ?>
+      <?php print render($page['footer_second']); ?>
+      <?php print render($page['footer_third']); ?>
+		</div>
+		<div id="credits-wrap" class="row">
+			<div id="credits">
+        <?php print('&copy;' . date('Y') . ' ');?>
+        <?php if (!empty(variable_get('site_name'))):?>
+          <?php print variable_get('site_name');?>
+        <?php endif;?>
+				<br/>Website designed by <a href="http://www.completewebsol.com">Complete Web Solutions</a>
+			</div>
+		</div>
+	</footer>
 </div>
