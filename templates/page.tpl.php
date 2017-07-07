@@ -1,16 +1,15 @@
 <div class="page-wrap">
-  <header class="header" role="banner">
+  <header class="header container" role="banner">
 
 	  <!-- Desktop Nav Bar -->
     <div class="branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>
-      <?php print render($page['branding']); ?>
     </div>
   </header>
 
-	<div id="main-nav">
+	<div id="main-nav" class="container">
     <?php print render($page['navigation']); ?>
 	</div>
 
@@ -35,13 +34,13 @@
   </div>
 
 
-  <?php print $messages; ?>
-  <?php print render($page['highlighted']); ?>
-	<!--      --><?php //print $breadcrumb; ?>
-  <?php print render($title_suffix); ?>
+	<div id="main-content" class="container">
+	  <?php print $messages; ?>
+	  <?php print render($page['highlighted']); ?>
+		<!--      --><?php //print $breadcrumb; ?>
+	  <?php print render($title_suffix); ?>
 
-	<div class="main">
-		<div class="row content" role="main">
+		<div class="content" role="main">
 			<div id="top-content">
         <?php print render($page['sidebar_first']); ?>
         <?php print render($page['sidebar_second']); ?>
@@ -60,8 +59,8 @@
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
 			</div>
-
 		</div>
+
 	</div>
 
 	<footer id="footer-wrap">

@@ -20,11 +20,19 @@ scripts[] = js/custom.js
 ; ========================================
 ; Regions
 ; ========================================
-regions[branding] = Branding
+regions[header-top-left] = Header Top Left
+regions[header-coupon-code] = Header Coupon Code
+regions[header-top-right] = Header Top Right
+
 regions[navigation] = Navigation
+regions[frontpage-banner] = Frontpage Banner
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[content] = Content
 regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
+
+regions[footer_first] = Footer first
+regions[footer_second] = Footer second
+regions[footer_third] = Footer third
 regions[footer] = Footer

@@ -1,0 +1,50 @@
+div.is-visible {
+  z-index: 12;
+}
+
+#offCanvas {
+  background: #000;
+  button {
+    z-index: 25;
+    color: #fff;
+    span {
+      font-size: 52px;
+    }
+  }
+  img {
+    width: 84px;
+    height: 95px;
+    position: relative;
+    left: 33%;
+    margin-top: 12%;
+  }
+  .menu {
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+    margin-top: 4em;
+    li {
+      list-style-image: none;
+      list-style-type: none;
+      width: 100%;
+      border-top: 1px solid grey;
+      background: black;
+      margin: 0;
+      padding: 0 !important;
+      a {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        &:hover {
+          background: linear-gradient(to bottom, #d0000d 0%, #d95358 100%);
+        }
+      }
+      &:last-child a {
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
+
+}
