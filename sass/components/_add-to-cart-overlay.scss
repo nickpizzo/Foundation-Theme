@@ -1,0 +1,21 @@
+.add-cart-message-wrapper {
+  background-color: black;
+  color: white;
+  @include breakpoint(medium down) {
+    left: 10%;
+    right: 10%;
+  }
+  .option-button-wrapper {
+    float: none;
+    .checkout {
+      background-color: orange;
+      margin-top: 20px;
+      a {
+        color: white;
+      }
+    }
+    .continue {
+      margin-bottom: 0;
+    }
+  }
+}

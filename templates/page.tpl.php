@@ -34,16 +34,19 @@
   </div>
 
 
-	<div id="main-content" class="container">
+	<div id="main" class="container">
 	  <?php print $messages; ?>
 	  <?php print render($page['highlighted']); ?>
 		<!--      --><?php //print $breadcrumb; ?>
 	  <?php print render($title_suffix); ?>
 
-		<div class="content" role="main">
-			<div id="top-content">
+		<div class="main-content-wrap" role="main">
+			<div id="sidebar">
         <?php print render($page['sidebar_first']); ?>
         <?php print render($page['sidebar_second']); ?>
+			</div>
+
+			<div id="title-bar">
         <?php print render($title_prefix); ?>
         <?php if ($title): ?>
 					<h1><?php print $title; ?></h1>

@@ -5,10 +5,13 @@
 @import '../node_modules/motion-ui/src/motion-ui';
 
 @import 'base/layout';
-@import 'cws-auto/buttons';
+@import 'base/buttons';
+@import 'base/global';
 @import 'cws-auto/commerce-flow';
 @import 'cws-auto/commerce-mobile';
 @import 'cws-auto/user';
+@import 'components/add-to-cart-overlay';
+@import 'components/footer';
 @import 'components/header-row-1';
 @import 'components/header-row-2';
 @import 'components/landing';
