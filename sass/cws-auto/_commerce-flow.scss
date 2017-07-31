@@ -1,25 +1,23 @@
 //Commerce flow
 body.page-checkout {
+  .button-operator {
+    margin: 0 10px;
+  }
   input[type=text] {
   }
   input[type=submit] {
-    margin-right: 8px;
   }
   input[type=submit]#edit-commerce-coupon-coupon-add {
     @extend .grey-flat-button;
-    margin-bottom: 8px;
   }
   input[type=submit]#edit-cancel {
     @extend .grey-flat-button;
-    margin-left: 8px;
   }
   input[type=submit]#edit-back {
     @extend .grey-flat-button;
-    margin-left: 8px;
   }
   input[type=submit]#edit-continue {
     @extend .green-flat-button;
-    margin-right: 8px;
   }
 }
 

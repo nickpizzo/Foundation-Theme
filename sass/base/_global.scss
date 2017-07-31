@@ -3,3 +3,95 @@
   margin-top: 1.5em;
   margin-bottom: 1.7em;
 }
+
+//Tabs sizes
+#main-content {
+  .tabs {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    li {
+      font-size: 16px;
+      a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+//Section headers
+#section-header {
+  text-align: center;
+  font-family: Nexa-Book;
+  h1 {
+    margin-bottom: 0;
+    @include breakpoint(medium down) {
+      margin-bottom: 1em;
+    }
+  }
+  span {
+    font-family: Nexa-Black;
+    color: blue;
+  }
+}
+
+#section-header-light {
+  text-align: center;
+  font-family: Nexa-Book;
+  color: #fff;
+  h1 {
+    margin-bottom: 0;
+  }
+  span {
+    font-family: Nexa-Black;
+    color: blue;
+  }
+}
+
+//add to any button
+ul.inline {
+  margin-left: 0;
+  li.addtoany {
+    padding: 0;
+  }
+}
+
+//views: fieldsets fix
+.fieldset {
+  //border: none !important;
+}
+
+//Horizontal tabs fixes
+@include breakpoint(medium down) {
+  ul.tabs {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    li {
+      display: flex;
+      margin-bottom: 2px;
+      a {
+        width: 100%;
+        border: 1px solid lightgrey;
+      }
+    }
+  }
+}
+
+//Hide drupal menu toggle
+#admin-menu {
+  //z-index: -20;
+}
+
+//form field width fixes
+#main-content {
+  [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'] {
+    max-width: 485px;
+  }
+  .form-textarea-wrapper {
+    max-width: 600px;
+  }
+  select {
+    max-width: 270px;
+  }
+}

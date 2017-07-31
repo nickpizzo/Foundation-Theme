@@ -17,3 +17,22 @@
     margin: 0 auto;
   }
 }
+
+#cancel-container {
+  @include breakpoint(small up) {
+    max-width: inherit;
+    margin: 0 auto;
+  }
+  @include breakpoint(medium up) {
+    max-width: inherit;
+    margin: 0 auto;
+  }
+  @include breakpoint(large up) {
+    max-width: inherit;
+    margin: 0 auto;
+  }
+  @include breakpoint(xlarge up) {
+    max-width: $global-width;
+    margin: 0 auto;
+  }
+}
