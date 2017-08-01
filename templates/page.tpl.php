@@ -1,14 +1,79 @@
 <div class="page-wrap">
 	<header class="header container" role="banner">
 
-		<!-- Desktop Nav Bar -->
-		<div class="branding">
-          <?php if ($logo): ?>
-			  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img
-					src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/></a>
-          <?php endif; ?>
+		<!-- Header Top bar -->
+		<div id="header-top-bar-wrap">
+			<div class="row align-middle align-justify">
+              <?php print render($page['header-top-left']); ?>
+              <?php print render($page['header-search']); ?>
+				<div id="header-top-right">
+                  <?php print render($page['commerce-header']); ?>
+				</div>
+			</div>
 		</div>
+
+		<!-- Mobile Nav Bar -->
+		<div class="off-canvas-content" data-off-canvas-content>
+			<div class="title-bar">
+				<div class="title-bar-left">
+					<div class="mobile-buttons-left">
+						<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+						<button data-toggle="mobile-search-dropdown"><i class="fa fa-search"></i></button>
+                      <?php print render($page['header-top-left']); ?>
+					</div>
+					<div class="mobile-buttons-right">
+						<a href="/user"><i class="fa fa-user"></i></a>
+						<a href="/cart"><i class="fa fa-shopping-cart"></i></a>
+					</div>
+				</div>
+
+			</div>
+			<!-- Mobile Search Dropdown -->
+			<div class="mobile-nav-search-wrap">
+				<div class="dropdown-pane" id="mobile-search-dropdown" data-dropdown data-auto-focus="true">
+                  <?php print render($page['header-top-left']); ?>
+				</div>
+			</div>
+		</div>
+
+		<!-- Desktop Logo & Nav Bar -->
+		<div id="logo-wrap">
+			<div class="row align-middle align-center">
+              <?php if ($logo): ?>
+				  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="main-logo"/></a>
+              <?php endif; ?>
+
+			</div>
+
+			<div id="nav-wrap" class="align-middle align-center">
+              <?php print render($page['navigation']); ?>
+			</div>
+		</div>
+
 	</header>
+
+  <?php if (drupal_is_front_page()): ?>
+	  <div id="frontpage-banner">
+        <?php print render($page['frontpage-banner']); ?>
+	  </div>
+
+	  <div id="mounting-brackets-wrap">
+        <?php print render($page['mounting-brackets']); ?>
+	  </div>
+
+	  <div id="led-lighting-wrap">
+		  <div class="row">
+            <?php print render($page['led-lighting']); ?>
+		  </div>
+	  </div>
+
+  <?php endif; ?>
+
+  <?php if (!drupal_is_front_page()): ?>
+	  <div id="interior-banner-wrap">
+        <?php print render($page['interior-banner']); ?>
+	  </div>
+  <?php endif; ?>
 
 	<div id="main-nav" class="container">
       <?php print render($page['navigation']); ?>

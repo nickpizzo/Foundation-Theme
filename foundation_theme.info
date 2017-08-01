@@ -21,7 +21,7 @@ scripts[] = js/custom.js
 ; Regions
 ; ========================================
 regions[header-top-left] = Header Top Left
-regions[header-coupon-code] = Header Coupon Code
+regions[header-search] = Header Search
 regions[header-top-right] = Header Top Right
 
 regions[navigation] = Navigation
