@@ -95,3 +95,12 @@ ul.inline {
     max-width: 270px;
   }
 }
+
+//remove default margin and padding on views:fieldsets
+.content {
+  .fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}

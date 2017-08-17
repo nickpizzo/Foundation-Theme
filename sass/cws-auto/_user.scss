@@ -1,16 +1,25 @@
-body.page-user-login,
+body.page-user,
 body.page-user-password {
-  #main-wrap {
-    .row {
+  #main {
+    .main-content-wrap {
       padding: 10px 35px;
       background-color: #efefef;
       border-radius: 15px;
       max-width: 750px;
+      margin: 0 auto;
       input[type='submit'] {
         @extend .blue-flat-button;
         font-weight: bold;
         padding: 8px 18px;
       }
+    }
+  }
+}
+
+body.page-user- {
+  #main {
+    .main-content-wrap {
+      max-width: 1120px;
     }
   }
 }

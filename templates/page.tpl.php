@@ -1,5 +1,5 @@
 <div class="page-wrap">
-	<header class="header container" role="banner">
+	<header class="header" role="banner">
 
 		<!-- Header Top bar -->
 		<div id="header-top-bar-wrap">
@@ -45,7 +45,7 @@
 
 			</div>
 
-			<div id="nav-wrap" class="align-middle align-center">
+			<div id="nav-wrap" class="row align-middle align-center">
               <?php print render($page['navigation']); ?>
 			</div>
 		</div>
