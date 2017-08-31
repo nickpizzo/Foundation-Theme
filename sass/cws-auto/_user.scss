@@ -1,16 +1,22 @@
 body.page-user,
 body.page-user-password {
   #main {
+    display: flex;
+    justify-content: center;
     .main-content-wrap {
-      padding: 10px 35px;
+      padding: 10px 35px !important;
       background-color: #efefef;
       border-radius: 15px;
       max-width: 750px;
-      margin: 0 auto;
+      margin: 0 2em;
       input[type='submit'] {
         @extend .blue-flat-button;
         font-weight: bold;
         padding: 8px 18px;
+      }
+      input[type='text'],
+      input[type='password'] {
+        max-width: 100%;
       }
     }
   }

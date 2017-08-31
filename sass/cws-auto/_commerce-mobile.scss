@@ -48,6 +48,12 @@
   body.page-user td:nth-of-type(4):before { content: "Total"; }
   body.page-user td:nth-of-type(5):before { content: "Total"; }
 
+  body.page-user-orders td:nth-of-type(1):before { content: "Date"; }
+  body.page-user-orders td:nth-of-type(2):before { content: "Price"; }
+  body.page-user-orders td:nth-of-type(3):before { content: "Quantity"; }
+  body.page-user-orders td:nth-of-type(4):before { content: "Total"; }
+  body.page-user-orders td:nth-of-type(5):before { content: "View"; }
+
   body.page-user table, body.page-user thead,
   body.page-user tbody,
   body.page-user th,
@@ -250,8 +256,8 @@
     table.views-table {
       tr,
       td {
-        width: 266px;
-        overflow: auto;
+        width: 283px;
+        overflow: hidden;
       }
     }
     table.commerce-price-formatted-components {
@@ -259,6 +265,13 @@
       td {
         width: 266px;
       }
+    }
+    tbody {
+      border-top: none;
+    }
+    .pane-data-full {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

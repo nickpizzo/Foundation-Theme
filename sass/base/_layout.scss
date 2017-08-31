@@ -1,38 +1,44 @@
 .container {
-  background: papayawhip;
+  //background: papayawhip;
   @include breakpoint(small up) {
     max-width: 300px;
     margin: 0 auto;
   }
+  @include breakpoint(small down) {
+    padding: 0 !important;
+  }
   @include breakpoint(medium up) {
-    max-width: 435px;
+    max-width: 630px;
     margin: 0 auto;
   }
   @include breakpoint(large up) {
-    max-width: 735px;
+    max-width: 835px;
     margin: 0 auto;
   }
   @include breakpoint(xlarge up) {
     max-width: $global-width;
     margin: 0 auto;
+  }
+  @include breakpoint(xlarge down) {
+    padding: 0 20px;
   }
 }
 
-#cancel-container {
-  @include breakpoint(small up) {
-    max-width: inherit;
-    margin: 0 auto;
-  }
-  @include breakpoint(medium up) {
-    max-width: inherit;
-    margin: 0 auto;
-  }
-  @include breakpoint(large up) {
-    max-width: inherit;
-    margin: 0 auto;
-  }
-  @include breakpoint(xlarge up) {
-    max-width: $global-width;
-    margin: 0 auto;
-  }
-}
+//#cancel-container {
+//  @include breakpoint(small up) {
+//    max-width: inherit;
+//    margin: 0 auto;
+//  }
+//  @include breakpoint(medium up) {
+//    max-width: inherit;
+//    margin: 0 auto;
+//  }
+//  @include breakpoint(large up) {
+//    max-width: inherit;
+//    margin: 0 auto;
+//  }
+//  @include breakpoint(xlarge up) {
+//    max-width: $global-width;
+//    margin: 0 auto;
+//  }
+//}
