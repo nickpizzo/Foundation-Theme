@@ -108,7 +108,7 @@ $breakpoints: (
         medium: 590px,
         large: 896px,
         xlarge: 1060px,
-        xxlarge: 1250px,
+        xxlarge: 1195px,
 );
 $print-breakpoint: large;
 $breakpoint-classes: (small medium large);
@@ -146,8 +146,8 @@ $header-styles: (
                 'h6': ('font-size': 16),
         ),
         medium: (
-                'h1': ('font-size': 48),
-                'h2': ('font-size': 40),
+                'h1': ('font-size': 38),
+                'h2': ('font-size': 36),
                 'h3': ('font-size': 31),
                 'h4': ('font-size': 25),
                 'h5': ('font-size': 20),

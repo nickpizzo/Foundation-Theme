@@ -88,10 +88,6 @@
 	  </div>
   <?php endif; ?>
 
-	<div id="main-nav" class="container">
-      <?php print render($page['navigation']); ?>
-	</div>
-
 
 	<!-- Mobile Nav Hidden Menu -->
 	<div class="off-canvas position-left" id="offCanvas" data-off-canvas
@@ -101,6 +97,9 @@
 		        data-close>
 			<span aria-hidden="true">&times;</span>
 		</button>
+		<a href="<?php print $front_page; ?>">
+			<img src="/sites/all/themes/Foundation-Theme/images/image.png" alt="">
+		</a>
 		<!-- Menu -->
       <?php print render($page['navigation']); ?>
 	</div>

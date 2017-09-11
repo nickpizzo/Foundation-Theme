@@ -1,3 +1,8 @@
+$primary-light: #a40205;
+$primary-dark: #252525;
+$accent-light: #BAB9B9;
+$accent-dark: #570103;
+
 //Main content fixes
 #main {
   margin-top: 1.5em;
@@ -56,11 +61,6 @@ ul.inline {
   }
 }
 
-//views: fieldsets fix
-.fieldset {
-  //border: none !important;
-}
-
 //Horizontal tabs fixes
 @include breakpoint(medium down) {
   ul.tabs {
@@ -76,11 +76,6 @@ ul.inline {
       }
     }
   }
-}
-
-//Hide drupal menu toggle
-#admin-menu {
-  //z-index: -20;
 }
 
 //form field width fixes
