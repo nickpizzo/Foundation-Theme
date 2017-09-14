@@ -1,5 +1,5 @@
 .add-cart-message-wrapper {
-  background-color: black;
+  background-color: $primary-dark;
   color: white;
   @include breakpoint(medium down) {
     left: 10%;
@@ -8,7 +8,7 @@
   .option-button-wrapper {
     float: none;
     .checkout {
-      background-color: orange;
+      background-color: $primary-light;
       margin-top: 20px;
       a {
         color: white;

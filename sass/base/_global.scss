@@ -27,16 +27,15 @@ $accent-dark: #570103;
 //Section headers
 #section-header {
   text-align: center;
-  font-family: Nexa-Book;
   h1 {
-    margin-bottom: 0;
+    margin-bottom: .5em;
+    color: $primary-dark;
     @include breakpoint(medium down) {
       margin-bottom: 1em;
     }
   }
   span {
-    font-family: Nexa-Black;
-    color: blue;
+    color: $primary-light;
   }
 }
 

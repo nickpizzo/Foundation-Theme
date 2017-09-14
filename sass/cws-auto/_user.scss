@@ -3,6 +3,7 @@ body.page-user-password {
   #main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     .main-content-wrap {
       padding: 10px 35px !important;
       background-color: #efefef;
