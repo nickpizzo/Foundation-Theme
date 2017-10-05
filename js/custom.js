@@ -3,6 +3,9 @@
 	$(document).ready(function () {
 		$(document).foundation();
 
+    //Clear selection button text
+    $(".facetapi-active").text("Clear Selection");
+
 		setSize();
 		$(window).on("resize", function () {
 			setSize();

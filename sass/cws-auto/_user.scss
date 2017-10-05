@@ -1,15 +1,18 @@
 body.page-user,
-body.page-user-password {
+body.page-user-password,
+body.page-user-register {
   #main {
+    .messages { width: 100%; }
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     .main-content-wrap {
-      padding: 10px 35px !important;
+      padding: 10px 25px !important;
       background-color: #efefef;
       border-radius: 15px;
       max-width: 750px;
-      margin: 0 2em;
+      width: 100%;
       input[type='submit'] {
         @extend .blue-flat-button;
         font-weight: bold;
