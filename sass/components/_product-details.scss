@@ -15,11 +15,12 @@ body.node-type-product-display {
       @include breakpoint(medium down) {
         width: 100%;
         order: 2;
+        margin-top: 1em;
       }
       .gallery-slides {
-        //width: 100% !important;
         @include breakpoint(medium down) {
-          //width: auto !important;
+          width: auto !important;
+          margin: 0 auto;
         }
         .gallery-frame {
           @include breakpoint(medium down) {
@@ -39,6 +40,7 @@ body.node-type-product-display {
       @include breakpoint(medium down) {
         width: 100%;
         order: 1;
+        padding: 0 !important;
       }
     }
     .group-right {
@@ -143,10 +145,23 @@ body.node-type-product-display {
     padding-bottom: 0 !important;
     fieldset {
       border: none !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+      .fieldset-wrapper {
+        margin-top: 0 !important;
+      }
     }
     border: 1px solid #ccc;
     padding-bottom: 2em;
-    .horizontal-tabs {border: none;}
+    .horizontal-tabs {
+      border: none;
+      ul.horizontal-tabs-list {
+        li {
+          min-width: inherit;
+        }
+      }
+    }
     .horizontal-tabs-list {
       @include breakpoint(small down) {
         display: flex;
