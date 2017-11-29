@@ -3,6 +3,15 @@ $primary-dark: #252525;
 $accent-light: #BAB9B9;
 $accent-dark: #570103;
 
+body {
+  margin: 0;
+  padding-top: 0 !important;
+}
+
+#admin-menu {
+  font-size: 11px !important;
+}
+
 //Main content fixes
 #main {
   margin-top: 1.5em;

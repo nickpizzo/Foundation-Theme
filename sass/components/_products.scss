@@ -59,6 +59,43 @@ body.page-products {
     //  }
     //}
   }
+  #block-current-search-standard {
+    border-radius: 8px;
+    padding: 13px 25px 13px 0;
+    margin-bottom: .4em;
+    h3 {
+      display: none;
+    }
+    .item-list {
+      margin-top: 0 !important;
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        li {
+          padding-top: 0;
+          margin-bottom: 0;
+          margin-top: 0;
+          display: flex;
+          align-items: center;
+          a {
+            @extend .fitment-light-button;
+            text-shadow: none;
+            border-radius: 0;
+            text-transform: uppercase;
+            height: 28px;
+            margin-left: 0;
+            margin-right: 10px;
+            padding: 0 8px !important;
+            &:hover {
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
   #main-content {
     @include grid-column(9);
     //@include breakpoint(large down) {
@@ -127,19 +164,52 @@ body.page-products {
       text-align: center;
     }
   }
-}
+  #mobile-sidebar-wrapper {
+    margin-bottom: 1em;
+    #sidebar-first-collapsible {
+      display: none;
+    }
+    #filter-button {
+      @extend .black-flat-button;
+      border-radius: 4px;
+      width: 100%;
+      padding: 10px 0;
+      height: 42px;
+      color: #fff;
+      text-shadow: none;
+      text-transform: uppercase;
+      i {
+        margin-left: 5px;
+      }
+    }
+    .ui-accordion {
+      .view-sidebar-banners {
+        display: none;
+      }
+      .ui-accordion-content {
+        padding: 15px 10px;
+      }
+      h2 {
+        background: #fff;
+        text-transform: uppercase;
+        color: #000;
+        padding-left: 21px;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        margin-top: 7px;
+        border-bottom: 2px solid $primary-light;
+        .ui-accordion-header-icon {
+          display: none;
+        }
+      }
+      .facetapi-processed {
+        .facetapi-active {
+          @extend .blue-flat-button;
+          padding: 1px 15px;
+        }
 
-#filter-button {
-  @extend .fitment-light-button;
-  border-radius: 4px;
-  width: 100%;
-  padding: 10px 0;
-  height: 38px;
-  color: #fff;
-  text-shadow: none;
-  text-transform: uppercase;
-  i {
-    margin-left: 5px;
+      }
+    }
   }
 }
 

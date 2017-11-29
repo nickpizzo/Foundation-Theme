@@ -143,11 +143,18 @@ body.node-type-product-display {
   }
   .group-tabs {
     padding-bottom: 0 !important;
+    .group-details {
+      .commerce-product-field {
+        .field {
+          display: flex;
+        }
+      }
+    }
     fieldset {
       border: none !important;
       margin-top: 0 !important;
       margin-bottom: 0 !important;
-      padding-bottom: 0 !important;
+      padding-bottom: 5px !important;
       .fieldset-wrapper {
         margin-top: 0 !important;
       }
