@@ -1,14 +1,5 @@
-.camo-bg-button {
-  padding: .5em 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  background: url('../images/topbar-bg.png');
-  font-family: Nexa-Bold;
-}
-
 .view-details-button {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $body-font-family;
   font-size: 14px;
   color: #ffffff;
   padding: 6px 0;
@@ -38,7 +29,7 @@
 }
 
 .red-glass-button {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $body-font-family;
   font-size: 14px;
   color: #ffffff;
   padding: 6px 0;
@@ -86,7 +77,7 @@
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:16px;
   padding:9px 24px;
   text-decoration:none;
@@ -126,7 +117,7 @@
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:16px;
   padding:9px 24px;
   text-decoration:none;
@@ -166,7 +157,7 @@
   display:inline-block;
   cursor:pointer;
   color: #282828;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:16px;
   padding:9px 24px;
   text-decoration:none;
@@ -206,7 +197,7 @@
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:16px;
   padding:9px 24px;
   text-decoration:none;
@@ -246,7 +237,7 @@
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:16px;
   padding:9px 24px;
   text-decoration:none;
@@ -286,7 +277,7 @@
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:15px;
   font-weight:bold;
   padding:6px 24px;
@@ -327,7 +318,7 @@
   display:inline-block;
   cursor:pointer;
   color:#666666;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:15px;
   font-weight:bold;
   padding:6px 24px;
@@ -368,7 +359,7 @@
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
+  font-family: $body-font-family;
   font-size:15px;
   font-weight:bold;
   padding:11px 23px;
@@ -433,17 +424,17 @@
 }
 
 .fitment-light-button {
-  -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
-  box-shadow:inset 0px 1px 0px 0px #cf866c;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF9B83), color-stop(1, #FF5C01));
-  background:-moz-linear-gradient(top, #FF9B83 5%, #FF5C01 100%);
-  background:-webkit-linear-gradient(top, #FF9B83 5%, #FF5C01 100%);
-  background:-o-linear-gradient(top, #FF9B83 5%, #FF5C01 100%);
-  background:-ms-linear-gradient(top, #FF9B83 5%, #FF5C01 100%);
-  background:linear-gradient(to bottom, #FF9B83 5%, #FF5C01 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9B83', endColorstr='#FF5C01',GradientType=0);
-  background-color:#FF9B83;
+  -moz-box-shadow:inset 0px 1px 0px 0px #ff5b56;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ff5b56;
+  box-shadow:inset 0px 1px 0px 0px #ff5b56;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5b56), color-stop(1, $primary-light));
+  background:-moz-linear-gradient(top, #ff5b56 5%, $primary-light 100%);
+  background:-webkit-linear-gradient(top, #ff5b56 5%, $primary-light 100%);
+  background:-o-linear-gradient(top, #ff5b56 5%, $primary-light 100%);
+  background:-ms-linear-gradient(top, #ff5b56 5%, $primary-light 100%);
+  background:linear-gradient(to bottom, #ff5b56 5%, $primary-light 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5b56', endColorstr='$primary-light',GradientType=0);
+  background-color:#ff5b56;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
   border-radius:3px;
@@ -459,14 +450,14 @@
   text-decoration:none;
   text-shadow:0px 1px 0px #854629;
   &:hover {
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF5C01), color-stop(1, #FF9B83));
-    background:-moz-linear-gradient(top, #FF5C01 5%, #FF9B83 100%);
-    background:-webkit-linear-gradient(top, #FF5C01 5%, #FF9B83 100%);
-    background:-o-linear-gradient(top, #FF5C01 5%, #FF9B83 100%);
-    background:-ms-linear-gradient(top, #FF5C01 5%, #FF9B83 100%);
-    background:linear-gradient(to bottom, #FF5C01 5%, #FF9B83 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5C01', endColorstr='#d0451b',GradientType=0);
-    background-color:#FF5C01;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, $primary-light), color-stop(1, #ff5b56));
+    background:-moz-linear-gradient(top, $primary-light 5%, #ff5b56 100%);
+    background:-webkit-linear-gradient(top, $primary-light 5%, #ff5b56 100%);
+    background:-o-linear-gradient(top, $primary-light 5%, #ff5b56 100%);
+    background:-ms-linear-gradient(top, $primary-light 5%, #ff5b56 100%);
+    background:linear-gradient(to bottom, $primary-light 5%, #ff5b56 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-light', endColorstr='#d0451b',GradientType=0);
+    background-color:$primary-light;
   }
   &:active {
     position:relative;

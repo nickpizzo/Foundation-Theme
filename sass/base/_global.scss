@@ -2,6 +2,7 @@ $primary-light: #a40205;
 $primary-dark: #252525;
 $accent-light: #BAB9B9;
 $accent-dark: #570103;
+$bg-light: #eee;
 
 body {
   margin: 0;
@@ -108,5 +109,13 @@ ul.inline {
     margin: 0;
     padding: 0;
     border: none;
+  }
+}
+
+//titles
+#title-bar {
+  h1 {
+    border-bottom: 1px solid $primary-dark;
+    margin-bottom: 18px;
   }
 }

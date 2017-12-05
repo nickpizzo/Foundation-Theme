@@ -7,6 +7,71 @@ body.page-products {
     @include breakpoint(medium down) {
       @include grid-column(12);
     }
+    #block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0 {
+      padding: 10px 18px;
+      background-color: $primary-dark;
+      border: 2px solid $accent-light;
+      margin-bottom: 1em;
+      label {
+        color: #fff;
+        display: none;
+      }
+      select {
+        color: #737373;
+        background: #fff;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        height: 35px;
+        padding: 0 0 0 .5em !important;
+      }
+      h2 {
+        display: none;
+      }
+      h4 {
+        color: #fff !important;
+      }
+      form {
+        .ajax-progress {
+          position: absolute;
+          right: 30px;
+          margin-top: 5px;
+          .message {
+            display: none;
+          }
+          .throbber {
+            background: transparent url(../images/loading.gif) no-repeat 0px center;
+            width: 26px;
+            height: 20px;
+            margin: 0;
+          }
+        }
+      }
+      input[type="submit"] {
+        @extend .fitment-light-button;
+        width: 100%;
+        font-size: 16px;
+        margin: .7em 0;
+        text-transform: uppercase;
+        height: 35px;
+      }
+      .messages {
+        display: none;
+      }
+      .item-list {
+        .first {
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+          a {
+            display: block;
+            order: 2;
+            @extend .fitment-light-button;
+            margin-top: 1em;
+            text-align: center;
+          }
+        }
+      }
+    }
     .block-facetapi {
       margin-bottom: 1em;
       h2 {

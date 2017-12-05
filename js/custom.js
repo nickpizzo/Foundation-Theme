@@ -5,6 +5,14 @@
 
     //Clear selection button text
     $(".facetapi-active").text("Clear Selection");
+    $("#sidebar-first-collapsible .facetapi-active").text("X");
+    $("#block-current-search-standard .content a").text("X");
+
+    //clear fulltext search button
+    var searchField = $('#edit-search-api-views-fulltext').attr('value');
+    if (searchField) {
+      $('#views-exposed-form-products-page .form-item').append("<a id='fulltext-clear-search' href='/products'>X</a>");
+    }
 
 		setSize();
 		$(window).on("resize", function () {

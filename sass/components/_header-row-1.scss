@@ -55,6 +55,20 @@
         @include breakpoint(large down) {
           width: 295px;
         }
+        #fulltext-clear-search {
+          position: absolute;
+          bottom: 9px;
+          right: 154px;
+          color: $primary-light;
+          background: #fff;
+          font-weight: bold;
+          border-radius: 25px;
+          padding: 1px 6px;
+          font-size: 12px;
+          @include breakpoint(large down) {
+            right: 206px;
+          }
+        }
       }
       #edit-search-api-views-fulltext {
         margin-bottom: 0;

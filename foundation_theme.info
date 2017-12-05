@@ -26,6 +26,7 @@ regions[header-top-right] = Header Top Right
 
 regions[navigation] = Navigation
 regions[frontpage-banner] = Frontpage Banner
+regions[interior-banner] = Interior Banner
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[content] = Content
