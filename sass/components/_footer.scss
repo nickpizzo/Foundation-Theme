@@ -5,6 +5,11 @@
     padding: 2em 0;
     .region-footer-first {
       @include grid-column(6);
+      iframe {
+        @include breakpoint(medium down) {
+          max-width: 100%;
+        }
+      }
     }
     .region-footer-second {
       @include grid-column(3);

@@ -23,7 +23,7 @@ function foundation_theme_preprocess_html(&$vars) {
 function foundation_theme_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == "views_exposed_form") {
     $form['search_api_views_fulltext']['#attributes'] = array(
-      'placeholder' => t('Search entire store')
+      'placeholder' => t('Search Keyword or Part #')
     );
   }
 

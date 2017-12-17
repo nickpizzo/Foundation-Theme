@@ -36,6 +36,9 @@ body.node-type-product-display {
       }
     }
     .group-right {
+      select {
+        margin-bottom: 0;
+      }
       width: 50%;
       @include breakpoint(medium down) {
         width: 100%;

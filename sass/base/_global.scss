@@ -34,6 +34,17 @@ body {
   }
 }
 
+//Default sidebar floats
+body.one-sidebar {
+  #sidebar {
+    @include grid-column(3);
+  }
+  #main-content,
+  #title-bar {
+    @include grid-column(9);
+  }
+}
+
 //Section headers
 #section-header {
   text-align: center;
@@ -69,6 +80,7 @@ ul.inline {
     padding: 0;
     .addtoany_share_save {
       padding: 0;
+      margin-top: 8px;
     }
   }
 }
