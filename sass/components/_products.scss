@@ -7,6 +7,50 @@ body.page-products {
     @include breakpoint(medium down) {
       @include grid-column(12);
     }
+    #sidebar-block-title {
+      font-weight: bold;
+      color: #fff;
+      background-color: $primary-dark;
+      padding: 5px 0 5px 10px;
+      line-height: 1;
+      //border: 2px solid $accent-light;
+      @include breakpoint(large down) {
+        font-size: 20px;
+      }
+      span {
+        color: $primary-light;
+      }
+    }
+    //Links hover and active
+    .item-list {
+      ul.facetapi-processed {
+        li {
+          color: $primary-light;
+          a {
+            text-transform: capitalize;
+            &:hover {
+              color: $primary-light;
+            }
+          }
+        }
+      }
+      ul.expanded {
+        padding-left: 10px;
+        margin-top: 5px;
+        li {
+          a {
+            color: $primary-light;
+            text-transform: capitalize;
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+      li.expanded {
+        color: $primary-light;
+      }
+    }
     #block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0 {
       padding: 10px 18px;
       background-color: $primary-dark;
@@ -173,7 +217,7 @@ body.page-products {
       display: flex;
       flex-wrap: wrap;
       li {
-        box-shadow: 0px 0px 3px 1px rgba(171,171,171,.5);
+        box-shadow: 0px 0px 5px 3px rgba(171, 171, 171, 0.5);
         display: flex;
         flex-flow: column;
         margin: 8px;
