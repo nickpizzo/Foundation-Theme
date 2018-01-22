@@ -12,8 +12,8 @@ div.is-visible {
     }
   }
   img {
-    width: 84px;
-    height: 95px;
+    max-width: 100px;
+    height: auto;
     position: relative;
     left: 33%;
     margin-top: 12%;

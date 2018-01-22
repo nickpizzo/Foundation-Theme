@@ -1,5 +1,13 @@
 //Commerce flow
 body.page-checkout {
+  .checkout-completion-message {
+    p {
+
+    }
+    a {
+
+    }
+  }
   .button-operator {
     margin: 0 10px;
   }
@@ -22,6 +30,9 @@ body.page-checkout {
 }
 
 body.page-cart {
+  .cart-empty-page {
+
+  }
   input.delete-line-item {
     font-size: 14px;
     @extend .grey-flat-button;

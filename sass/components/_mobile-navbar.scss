@@ -1,3 +1,6 @@
 .off-canvas-content {
   display: none;
+  @include breakpoint(medium down) {
+    display: block;
+  }
 }
