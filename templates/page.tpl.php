@@ -146,6 +146,10 @@
 		</div>
 
 	</div>
+	
+	<?php if (drupal_is_front_page()): ?>
+
+	<?php endif; ?>
 
 	<footer id="footer-wrap">
 		<div class="container">

@@ -142,6 +142,7 @@ ul.inline {
 
 //custom pagination
 .item-list {
+  display: flex;
   .pager {
     padding: 0;
     text-align: right;

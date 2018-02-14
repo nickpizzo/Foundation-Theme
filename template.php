@@ -31,6 +31,12 @@ function foundation_theme_form_alter(&$form, &$form_state, $form_id) {
 		$form['year']['#options'][0] = 'Year';
 		$form['make']['#options'][0] = 'Make';
 		$form['model']['#options'][0] = 'Model';
-		$form['submit']['#value'] = t("GO");
+		$form['submit']['#value'] = t("Search");
+	}
+
+	elseif ($form_id == 'fitment_base_form') {
+		$form['year']['#options'][0] = 'Year';
+		$form['make']['#options'][0] = 'Make';
+		$form['model']['#options'][0] = 'Model';
 	}
 }
