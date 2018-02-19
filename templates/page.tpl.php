@@ -16,32 +16,23 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Mobile Nav Bar -->
+		
+		<!-- Mobile Nav Top Bar -->
 		<div class="off-canvas-content" data-off-canvas-content>
 			<div class="title-bar">
 				<div class="title-bar-left">
 					<div class="mobile-buttons-left">
-						<button class="menu-icon" type="button"
+						<button class="menu-icon" id="menu-toggle" type="button"
 						        data-toggle="offCanvas"></button>
-						<button data-toggle="mobile-search-dropdown"><i
-							  class="fa fa-search"></i></button>
-                      <?php print render($page['header-top-left']); ?>
+						<h6>MENU</h6>
+											<?php print render($page['header-top-left']); ?>
 					</div>
 					<div class="mobile-buttons-right">
-						<a href="/user"><i class="fa fa-user"></i></a>
-						<a href="/cart"><i
-							  class="fa fa-shopping-cart"></i></a>
+						<a href="/user"><i class="fa fa-user-circle"></i></a>
+						<a href="/cart"><i class="fa fa-shopping-cart"></i></a>
 					</div>
 				</div>
-
-			</div>
-			<!-- Mobile Search Dropdown -->
-			<div class="mobile-nav-search-wrap">
-				<div class="dropdown-pane" id="mobile-search-dropdown"
-				     data-dropdown data-auto-focus="true">
-                  <?php print render($page['header-top-left']); ?>
-				</div>
+			
 			</div>
 		</div>
 
@@ -57,11 +48,28 @@
               <?php endif; ?>
 
 			</div>
+			
+			<div id="mobile-search-wrap">
+				<?php print render($page['searchbar-right']); ?>
+			</div>
 
 			<div id="nav-wrap" class="row align-middle align-center">
               <?php print render($page['navigation']); ?>
 			</div>
 		</div>
+		
+		<!-- Mobile Choose vehicle -->
+		<ul class="vertical menu accordion-menu" data-accordion-menu>
+			<li>
+				<a class="choose-vehicle-trigger" href="#"><h5>Choose
+						Vehicle</h5></a>
+				<ul class="menu vertical nested">
+					<div class="mobile-filters-wrap">
+					
+					</div>
+				</ul>
+			</li>
+		</ul>
 
 	</header>
 

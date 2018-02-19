@@ -2,6 +2,7 @@ $primary-light: #a40205;
 $primary-dark: #252525;
 $accent-light: #BAB9B9;
 $accent-dark: #570103;
+$header-accent: #595959;
 $bg-light: #eee;
 
 body {
@@ -142,7 +143,6 @@ ul.inline {
 
 //custom pagination
 .item-list {
-  display: flex;
   .pager {
     padding: 0;
     text-align: right;

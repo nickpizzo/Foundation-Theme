@@ -310,11 +310,23 @@ body.page-products {
         }
       }
     }
-    .item-list {
-      margin-top: 2em;
-      display: flex;
-      li {
-        margin-left: 10px;
+    #block-current-search-standard {
+      .item-list {
+        margin-top: 2em;
+        display: flex;
+        li {
+          margin-left: 10px;
+        }
+      }
+    }
+    #block-system-main {
+      .item-list {
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        li {
+          margin-left: 10px;
+        }
       }
     }
     .view-footer {

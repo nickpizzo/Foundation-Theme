@@ -1,5 +1,9 @@
 //Commerce flow
 body.page-checkout {
+  .form-item {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
   .checkout-completion-message {
     p {
 
