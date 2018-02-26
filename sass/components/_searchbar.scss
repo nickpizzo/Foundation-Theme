@@ -132,7 +132,7 @@
                   border-radius: 0;
                   text-transform: uppercase;
                   background: $header-accent;
-                  color: $primary-light;
+                  color: #fff;
                   border: none;
                   height: 35px;
                   font-size: 14px;
@@ -140,7 +140,7 @@
                   margin-left: 8px;
                   &:hover {
                     color: #fff;
-                    background: #000;
+                    background: $primary-light;
                     cursor: pointer;
                   }
                 }
@@ -158,13 +158,13 @@
             padding-right: 0;
             #fulltext-clear-search {
               position: absolute;
-              bottom: 13px;
-              right: 60px;
-              color: $header-accent;
-              padding: 1px 6px;
-              font-size: 15px;
-              @include breakpoint(large down) {
-                right: 206px;
+              bottom: 15px;
+              right: 69px;
+              color: #fff;
+              font-weight: bold;
+              i {
+                color: $header-accent;
+                font-size: 18px;
               }
             }
           }
@@ -225,6 +225,18 @@
             width: 266px;
           }
         }
+      }
+    }
+  }
+}
+
+body.not-logged-in {
+  #searchbar-wrap {
+    .form-item-search-api-views-fulltext {
+      position: relative;
+      #fulltext-clear-search {
+        bottom: 8px !important;
+        right: 20px !important;
       }
     }
   }
