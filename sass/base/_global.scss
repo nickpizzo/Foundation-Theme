@@ -4,6 +4,8 @@ $accent-light: #BAB9B9;
 $accent-dark: #570103;
 $header-accent: #595959;
 $bg-light: #eee;
+$primary-lighter: lighten($primary-light,18%);
+$primary-darker: darken($primary-light,18%);
 
 body {
   margin: 0;
@@ -20,6 +22,10 @@ body {
 #main {
   margin-top: 1.5em;
   margin-bottom: 1.7em;
+}
+
+.collageformatter-collage {
+  margin-bottom: 15px;
 }
 
 //Tabs sizes

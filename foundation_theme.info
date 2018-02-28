@@ -25,6 +25,10 @@ regions[header-search] = Header Search
 regions[header-top-right] = Header Top Right
 
 regions[navigation] = Navigation
+regions[mobile-menu] = Mobile Menu
+regions[header-byline] = Header Byline
+regions[searchbar-left] = Searchbar Left
+regions[searchbar-right] = Searchbar Right
 regions[frontpage-banner] = Frontpage Banner
 regions[interior-banner] = Interior Banner
 regions[highlighted] = Highlighted
@@ -33,6 +37,8 @@ regions[content] = Content
 regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
 
+regions[pre_footer_left] = Pre Footer Left
+regions[pre_footer_right] = Pre Footer Right
 regions[footer_first] = Footer first
 regions[footer_second] = Footer second
 regions[footer_third] = Footer third

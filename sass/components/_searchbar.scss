@@ -34,7 +34,6 @@
             align-items: center;
           }
           input[type="submit"] {
-            //@extend .flat-green;
             text-shadow: none;
             border-radius: 0;
             background: $header-accent; /*$header-accent;*/
@@ -44,11 +43,15 @@
             font-size: 16px;
             padding: 4px 5px 2px 5px;
             color: #fff;
+            transition: .3s;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            text-transform: uppercase;
             &:hover {
               color: #fff;
               background: $primary-light;
               cursor: pointer;
-              border: 1px solid #000;
+              //border: 1px solid #000;
             }
           }
           .form-item-model {
