@@ -3,7 +3,8 @@
   font-size: 15px;
   padding: 13px 0;
   color: white;
-  background: $primary-light;
+  background: $primary-light; /* For browsers that do not support gradients */
+  background: linear-gradient($primary-lighter, $primary-light);
   @include breakpoint(medium down) {
     display: none;
   }

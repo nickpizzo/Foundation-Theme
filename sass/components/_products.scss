@@ -24,7 +24,7 @@ body.page-products {
     //Links hover and active
     .item-list {
       a {
-        font-size: 16px;
+        font-size: 14px;
       }
       .facetapi-limit-link {
         color: $primary-dark !important;
@@ -32,7 +32,7 @@ body.page-products {
       ul.facetapi-processed {
         li {
           color: $primary-dark;
-          font-size: 16px;
+          font-size: 14px;
           a {
             text-transform: capitalize;
             color: #000;
@@ -48,7 +48,6 @@ body.page-products {
         margin-top: 5px;
         li {
           a {
-            color: #fff;
             text-transform: capitalize;
             &:hover {
               color: $primary-dark;
@@ -59,7 +58,6 @@ body.page-products {
       }
       li.expanded {
         color: $primary-dark;
-        font-weight: bold;
       }
     }
     #block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0 {
@@ -262,6 +260,14 @@ body.page-products {
           }
         }
         .views-field-field-image {
+          min-height: 263px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include breakpoint(small down) {
+            min-height: initial;
+            display: block;
+          }
           img {
             @include breakpoint(small down) {
               max-width: 75px;
