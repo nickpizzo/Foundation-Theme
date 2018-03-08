@@ -10,7 +10,7 @@
     //Clear selection button text
     $(".facetapi-active").text("Clear Selection");
     $("#sidebar-first-collapsible .facetapi-active").text("X");
-    $("#block-current-search-standard .content a").text("X");
+    $("#block-current-search-standard .content a").html('<i class="fa fa-times"></i>');
 
     //clear fulltext search button
     var searchField = $('#edit-search-api-views-fulltext').attr('value');
