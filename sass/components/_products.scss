@@ -237,6 +237,7 @@ body.page-products {
         padding: 6px;
         border: 2px solid grey;
         height: auto;
+        transition: .3s;
         @include breakpoint(xlarge down) {
           width: 243px;
         }
@@ -260,10 +261,10 @@ body.page-products {
           }
         }
         .views-field-field-image {
-          min-height: 263px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          max-height: 263px;
+          //display: flex;
+          //align-items: center;
+          //justify-content: center;
           @include breakpoint(small down) {
             min-height: initial;
             display: block;

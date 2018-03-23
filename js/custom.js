@@ -40,7 +40,7 @@
 					mobileFacet = true;
 				}
 			});
-			$( "#mobile-sidebar-wrapper" ).css("display","none");
+			$( "#sidebar-first-collapsible" ).css("display","none");
 		};
 	};
 
