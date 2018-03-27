@@ -199,6 +199,9 @@
             background-color: $primary-light;
             border: 1px solid #000;
           }
+          &:active {
+            position: inherit;
+          }
         }
         #edit-search-api-views-fulltext {
           top: 25px;

@@ -26,7 +26,7 @@ regions[header-top-right] = Header Top Right
 
 regions[navigation] = Navigation
 regions[mobile-menu] = Mobile Menu
-regions[header-byline] = Header Byline
+regions[header-callout] = Header Callout
 regions[searchbar-left] = Searchbar Left
 regions[searchbar-right] = Searchbar Right
 regions[frontpage-banner] = Frontpage Banner
