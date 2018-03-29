@@ -1,0 +1,11 @@
+body.page-dealer-locator {
+  #google-store-locator-map-container {
+    @include breakpoint(small down) {
+      display: flex !important;
+      flex-direction: column !important;
+      .google-store-locator-panel {
+        order: 2;
+      }
+    }
+  }
+}

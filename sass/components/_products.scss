@@ -191,6 +191,10 @@ body.page-products {
         display: flex;
         align-items: center;
         margin-bottom: 0;
+        @include breakpoint(small down) {
+          flex-direction: column;
+          align-items: baseline;
+        }
         li {
           padding-top: 0;
           margin-bottom: 0;
@@ -342,6 +346,12 @@ body.page-products {
     }
   }
   #mobile-sidebar-wrapper {
+    h2 {
+      display: none;
+    }
+    h4 {
+      margin-top: 8px;
+    }
     margin-bottom: 1em;
     #sidebar-first-collapsible {
       display: none;
@@ -360,6 +370,15 @@ body.page-products {
       }
     }
     .ui-accordion {
+      .facetapi-facetapi-checkbox-links {
+        font-size: 16px;
+      }
+      a {
+        font-family: $body-font-family;
+      }
+      .expanded {
+        font-family: $body-font-family;
+      }
       .view-sidebar-banners {
         display: none;
       }
@@ -384,7 +403,6 @@ body.page-products {
           @extend .blue-flat-button;
           padding: 1px 15px;
         }
-
       }
     }
   }
