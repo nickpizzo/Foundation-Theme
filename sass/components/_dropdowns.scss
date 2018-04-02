@@ -13,6 +13,9 @@ body.not-logged-in {
 }
 
 .mega-menu {
+  @include breakpoint(medium down) {
+    display: none;
+  }
   .dropdown-pane {
     border-top: 2px solid $primary-light;
     border-bottom: 2px solid $primary-light;
@@ -29,20 +32,4 @@ body.not-logged-in {
     color: #fff;
   }
 
-  .menu {
-    background: none;
-  }
-
-  > a::after {
-    display: block;
-    width: 0;
-    height: 0;
-    border: inset 6px;
-    content: '';
-    border-bottom-width: 0;
-    border-top-style: solid;
-    border-color: #1779ba transparent transparent;
-    margin-left: 10px;
-    margin-top: 11%;
-  }
 }
