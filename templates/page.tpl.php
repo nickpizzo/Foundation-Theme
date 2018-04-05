@@ -206,17 +206,17 @@
 	
 	<div id="pre-footer-wrap">
 		<div class="container">
-					<?php print render($page['pre_footer_left']); ?>
-					<?php print render($page['pre_footer_right']); ?>
+		   <?php print render($page['pre_footer_left']); ?>
+		   <?php print render($page['pre_footer_right']); ?>
 		</div>
 	</div>
 	
 	<footer id="footer-wrap">
 		<div class="container">
 			<div class="row">
-							<?php print render($page['footer_first']); ?>
-							<?php print render($page['footer_second']); ?>
-							<?php print render($page['footer_third']); ?>
+			   <?php print render($page['footer_first']); ?>
+			   <?php print render($page['footer_second']); ?>
+			   <?php print render($page['footer_third']); ?>
 			</div>
 			<div class="row">
 							<?php print render($page['footer_fourth']); ?>
@@ -228,7 +228,7 @@
 										<?php print variable_get('site_name'); ?>
 									<?php endif; ?>
 					<br/>Website designed by <a
-					  href="http://www.completewebsol.com">Complete Web
+					  href="http://www.completewebsol.com" href="_blank">Complete Web
 						Solutions</a>
 				</div>
 			</div>
