@@ -128,7 +128,7 @@
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<a href="<?php print $front_page; ?>">
-			<img src="/sites/all/themes/Foundation-Theme/images/image.png" alt="">
+			<img src="/sites/all/themes/Foundation-Theme/logo.png" alt="">
 		</a>
 		<!-- Menu -->
 			<?php print render($page['navigation']); ?>

@@ -3,7 +3,7 @@ div.is-visible {
 }
 
 #offCanvas {
-  background: #000;
+  background: $primary-dark;
   button {
     z-index: 25;
     color: #fff;
@@ -18,27 +18,39 @@ div.is-visible {
     left: 33%;
     margin-top: 12%;
   }
-  .menu {
+  .menu,
+  #om-menu-main-menu {
+    display: flex;
     flex-direction: column;
     color: white;
     align-items: flex-start;
-    margin-top: 2em;
+    //margin-top: 2em;
+    width: 100%;
+    height: auto;
     li {
       list-style-image: none;
       list-style-type: none;
       width: 100%;
       border-top: 1px solid grey;
-      background: black;
+      background: $primary-dark; /* For browsers that do not support gradients */
+      background: linear-gradient(#575757, $primary-dark);
       margin: 0;
       padding: 0 !important;
-      a {
-        color: white;
+      height: auto !important;
+      a,
+      span {
+        color: #fff;
         font-weight: bold;
         text-transform: uppercase;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        &:hover {
-          background: linear-gradient(to bottom, #d0000d 0%, #d95358 100%);
+        padding-top: .5em;
+        padding-bottom: .5em;
+        width: 100%;
+        height: auto !important;
+        &:hover,
+        &:active {
+          background: $primary-light; /* For browsers that do not support gradients */
+          background: linear-gradient($primary-lighter, $primary-light);
+          color: #fff;
         }
       }
       &:last-child a {
