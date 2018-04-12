@@ -97,8 +97,8 @@
 	  
 	  <div id="searchbar-wrap">
 		  <div class="container">
-						<?php print render($page['searchbar-left']); ?>
-						<?php print render($page['searchbar-right']); ?>
+		     <?php print render($page['searchbar-left']); ?>
+		     <?php print render($page['searchbar-right']); ?>
 		  </div>
 	  </div>
 	
@@ -106,16 +106,24 @@
 	
 	<?php if (!drupal_is_front_page()): ?>
 	  <div id="interior-banner-wrap">
-				<?php print render($page['interior-banner']); ?>
+	     <?php print render($page['interior-banner']); ?>
 	  </div>
 	  
 	  <div id="searchbar-wrap">
 		  <div class="container">
-						<?php print render($page['searchbar-left']); ?>
-						<?php print render($page['searchbar-right']); ?>
+		     <?php print render($page['searchbar-left']); ?>
+		     <?php print render($page['searchbar-right']); ?>
 		  </div>
 	  
 	  </div>
+		
+		<div class="container" id="interior-custom-content">
+					<?php print render($page['custom-content']); ?>
+		</div>
+		
+		<div id="interior-custom-content-wide">
+					<?php print render($page['custom-content-wide']); ?>
+		</div>
 	<?php endif; ?>
 	
 	
@@ -178,21 +186,30 @@
 	</div>
 	
 	<?php if (drupal_is_front_page()): ?>
+		
+		<div class="container" id="frontpage-custom-content">
+		   <?php print render($page['custom-content']); ?>
+		</div>
+		
+		<div id="frontpage-custom-content-wide">
+		   <?php print render($page['custom-content-wide']); ?>
+		</div>
+	  
 	  <div id="frontpage-about-wrap" class="container">
-				<?php print render($page['frontpage-about']); ?>
+	     <?php print render($page['frontpage-about']); ?>
 	  </div>
 	  
 	  <div class="container">
-				<?php print render($page['frontpage-categories']); ?>
+	     <?php print render($page['frontpage-categories']); ?>
 	  </div>
 	  
 	  <div class="container">
-				<?php print render($page['frontpage-top-sellers']); ?>
+	     <?php print render($page['frontpage-top-sellers']); ?>
 	  </div>
 	  
 	  <div id="our-services-wrap">
 		  <div class="container">
-						<?php print render($page['frontpage-our-services']); ?>
+		     <?php print render($page['frontpage-our-services']); ?>
 		  </div>
 	  </div>
 	

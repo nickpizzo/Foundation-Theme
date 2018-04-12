@@ -84,10 +84,13 @@ body.page-products {
         color: #fff !important;
       }
       form {
+        .form-item {
+          position: relative;
+        }
         .ajax-progress {
           position: absolute;
-          right: 30px;
-          margin-top: 5px;
+          right: 11px;
+          margin-top: 7px;
           .message {
             display: none;
           }

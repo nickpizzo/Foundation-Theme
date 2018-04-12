@@ -24,6 +24,9 @@ regions[header-top-left] = Header Top Left
 regions[header-search] = Header Search
 regions[header-top-right] = Header Top Right
 
+regions[custom-content] = Custom Content
+regions[custom-content-wide] = Custom Content Wide
+
 regions[navigation] = Navigation
 regions[mobile-menu] = Mobile Menu
 regions[header-callout] = Header Callout

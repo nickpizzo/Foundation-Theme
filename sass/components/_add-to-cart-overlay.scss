@@ -10,10 +10,11 @@
     .checkout {
       background-color: $primary-light;
       margin-top: 20px;
+      padding: 0;
       a {
         color: white;
+        padding: 5px 10px;
         display: block;
-        width: 100%;
       }
     }
     .continue {
