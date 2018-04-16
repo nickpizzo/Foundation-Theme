@@ -20,6 +20,13 @@ body {
   }
 }
 
+//remove outlines helper, consider usability before use
+.remove-outlines {
+  outline-style:none;
+  box-shadow:none;
+  border-color:transparent;
+}
+
 #admin-menu {
   #admin-menu-wrapper {
     font-size: 11px !important;

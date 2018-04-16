@@ -349,6 +349,9 @@ body.page-products {
     }
   }
   #mobile-sidebar-wrapper {
+    @include breakpoint(medium down) {
+      display: block !important;
+    }
     h2 {
       display: none;
     }
