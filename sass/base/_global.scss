@@ -7,6 +7,9 @@ $bg-light: #eee;
 $primary-lighter: lighten($primary-light,18%);
 $primary-darker: darken($primary-light,18%);
 
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+
+
 body {
   margin: 0;
   padding-top: 0 !important;
