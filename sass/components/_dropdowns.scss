@@ -1,10 +1,10 @@
 $dd-offset: 257px;
 $dd-offset-alt: $dd-offset - 29px;
 
-body.not-logged-in {
+body.admin-menu {
   .mega-menu {
     .dropdown-pane {
-      top: $dd-offset-alt !important;
+      top: $dd-offset !important;
       //@include breakpoint(xlarge down) {
       //  top: 270px !important;
       //}
@@ -30,7 +30,7 @@ body.not-logged-in {
     margin: 0 auto !important;
     left: 0% !important;
     right: 0% !important;
-    top: $dd-offset !important;
+    top: $dd-offset-alt !important;
     background: rgba($primary-dark, .95);
     color: #fff;
   }
