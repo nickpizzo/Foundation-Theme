@@ -79,7 +79,7 @@
 		<!--Mega Menu dropdowns-->
 		<div class="mega-menu">
 			<div class="dropdown-pane bottom"
-			     id="shop-parts-dropdown" data-dropdown
+			     id="shop-category-dropdown" data-dropdown
 			     data-options="closeOnClick:true; hover: true; hoverPane: true; vOffset:11">
 				<div class="container">
 									<?php print render($page['parts-dropdown']); ?>

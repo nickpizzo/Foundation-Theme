@@ -2,6 +2,8 @@
 
 	$(document).ready(function () {
 
+    $("#om-leaf-om-u1-359049470-2 a").attr("data-toggle","shop-category-dropdown");
+
 		$(document).foundation();
 
     // Add is-open, for debugging mega-menu only
