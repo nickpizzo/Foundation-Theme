@@ -1,0 +1,28 @@
+//sidebar right pages
+.page-node-4826,
+.page-node-4827,
+.page-node-4828,
+.node-type-gallery,
+.page-gallery {
+  .main-content-wrap {
+    @include breakpoint(medium down) {
+      display: block;
+    }
+    display: flex;
+    #sidebar {
+      order: 1;
+    }
+    .order-option {
+      display: flex;
+      flex-direction: column;
+      flex:2 0 0;
+      #title-bar,
+      #main-content {
+        width: 100%;
+        @include breakpoint(medium down) {
+          //float: none;
+        }
+      }
+    }
+  }
+}
