@@ -355,6 +355,9 @@ body.page-products {
     @include breakpoint(medium down) {
       display: block !important;
     }
+    .blow-it-away {
+      display: none !important;
+    }
     h2 {
       display: none;
     }
@@ -364,6 +367,24 @@ body.page-products {
     margin-bottom: 1em;
     #sidebar-first-collapsible {
       display: none;
+    }
+    form {
+      label {
+        display: none;
+      }
+      select {
+        margin-bottom: 0;
+      }
+      input[type="submit"] {
+        @extend .black-flat-button;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+      }
+      .facetapi-active {
+        @extend .blue-flat-button;
+        //display: block;
+      }
     }
     #filter-button {
       @extend .black-flat-button;
