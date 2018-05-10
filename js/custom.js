@@ -42,14 +42,14 @@
 					mobileFacet = true;
 				}
 			});
-			$( "#sidebar-first-collapsible" ).css("display","none");
+			$( "#mobile-sidebar-wrapper" ).css("display","none");
 		};
 	};
 
 	function facets_desktop() {
 		if($("#sidebar-first-collapsible .region-sidebar-first").data("uiAccordion")) {
 			$("#sidebar-first-collapsible .region-sidebar-first").accordion("destroy");
-			$( "#sidebar-first-collapsible" ).css("display","block");
+			$( ".page-products #mobile-sidebar-wrapper" ).css("display","block");
 		};
 	};
 

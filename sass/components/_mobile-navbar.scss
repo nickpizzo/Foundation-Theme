@@ -1,8 +1,8 @@
 .off-canvas-content {
-  display: none;
-  @include breakpoint(medium down) {
-    display: block;
-  }
+  //display: none;
+  //@include breakpoint(medium down) {
+  //  display: block;
+  //}
   background: $primary-dark;
   border-bottom: 1px solid #fff;
   height: 56px;

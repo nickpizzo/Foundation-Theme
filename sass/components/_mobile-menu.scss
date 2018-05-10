@@ -1,6 +1,6 @@
-div.is-visible {
-  z-index: 12;
-}
+//div.is-visible {
+//  z-index: 12;
+//}
 
 #offCanvas {
   background: $primary-dark;
@@ -42,8 +42,8 @@ div.is-visible {
         color: #fff;
         font-weight: bold;
         text-transform: uppercase;
-        padding-top: .5em;
-        padding-bottom: .5em;
+        padding-top: .8em;
+        padding-bottom: .8em;
         width: 100%;
         height: auto !important;
         &:hover,

@@ -71,6 +71,8 @@
 
         p {
           margin-bottom: 0;
+          line-height: 1.2;
+          text-align: center;
           color: #fff;
           @include breakpoint(medium down) {
             font-size: 14px;

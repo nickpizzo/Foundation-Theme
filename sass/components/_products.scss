@@ -288,6 +288,9 @@ body.page-products {
           display: flex;
           flex-direction: column;
           height: 100%;
+          @include breakpoint(small down) {
+            width: 100%;
+          }
           .views-field-title {
             margin-top: 5px;
             flex: 2 1 auto;
