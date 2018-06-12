@@ -1,0 +1,48 @@
+$maximenu-dropdown-bg: rgba(0, 0, 0, 0.85);
+
+//full width om-maximenys
+.om-maximenu-row {
+  ul.om-menu {
+    width: 100%;
+    li.om-leaf {
+      float: none;
+      display: inline-block;
+      position: static;
+      .om-maximenu-content {
+        width: 100% !important;
+        .om-maximenu-middle {
+          background: none;
+          .om-maximenu-middle-left {
+            background: $maximenu-dropdown-bg;
+          }
+          .om-maximenu-middle-right {
+            margin-top: 10px;
+            margin-right: 0;
+            background: none;
+            border-top: 6px solid $primary-light;
+          }
+        }
+        .om-maximenu-bottom {
+          background: $maximenu-dropdown-bg;
+          .om-maximenu-bottom-right {
+            display: none;
+          }
+        }
+        .om-maximenu-open {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.om-maximenu-middle {
+  .block {
+    h3 {
+
+    }
+  }
+}
+
+
+
