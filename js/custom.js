@@ -9,9 +9,10 @@
     // Add is-open, for debugging mega-menu only
     // $("#shop-terrain-dropdown").addClass("is-open");
 
-    //Clear selection button text
+    //Clear selection button icons
     $(".facetapi-active").text("Clear Selection");
-    $("#sidebar-first-collapsible .facetapi-active").text("X");
+    $("#sidebar-first-collapsible .facetapi-active").empty();
+    $("#sidebar-first-collapsible .facetapi-active").append("<i class=\"fa fa-times\"></i>");
     $("#block-current-search-standard .content a").html('<i class="fa fa-times"></i>');
 
     //clear fulltext search button
