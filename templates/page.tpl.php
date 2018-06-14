@@ -23,14 +23,12 @@
 			<!-- Header Top bar -->
 			<div id="header-top-bar-wrap">
 				<div class="container">
-					<div class="row align-middle align-justify">
-						<div id="header-top-left">
-						   <?php print render($page['header-top-left']); ?>
-						   <?php print render($page['header-search']); ?>
-						</div>
-						<div id="header-top-right">
-						   <?php print render($page['header-top-right']); ?>
-						</div>
+					<div id="header-top-left">
+					   <?php print render($page['header-top-left']); ?>
+					   <?php print render($page['header-search']); ?>
+					</div>
+					<div id="header-top-right">
+					   <?php print render($page['header-top-right']); ?>
 					</div>
 				</div>
 			</div>
@@ -64,16 +62,16 @@
 							<?php endif; ?>
 				
 				<div id="mobile-search-wrap">
-									<?php print render($page['searchbar-right']); ?>
+				   <?php print render($page['searchbar-right']); ?>
 				</div>
 				
-				<div id="nav-wrap" class="row align-middle align-center">
-									<?php print render($page['navigation']); ?>
+				<div id="nav-wrap">
+				   <?php print render($page['navigation']); ?>
 				</div>
 				
 				<div id="header-callout-wrap">
 					<div class="container">
-											<?php print render($page['header-callout']); ?>
+					   <?php print render($page['header-callout']); ?>
 					</div>
 				</div>
 			
