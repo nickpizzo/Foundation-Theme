@@ -10,7 +10,7 @@
     // $("#shop-terrain-dropdown").addClass("is-open");
 
     //Clear selection button icons
-    $(".facetapi-active").text("Clear Selection");
+    $("#searchbar-wrap .facetapi-active").text("Clear Selection");
     $("#sidebar-first-collapsible .facetapi-active").empty();
     $("#sidebar-first-collapsible .facetapi-active").append("<i class=\"fa fa-times\"></i>");
     $("#block-current-search-standard .content a").html('<i class="fa fa-times"></i>');

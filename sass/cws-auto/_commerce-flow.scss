@@ -30,6 +30,9 @@ body.page-checkout {
   }
   input[type=submit]#edit-continue {
     @extend .green-flat-button;
+    @include breakpoint(small down) {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -144,6 +147,12 @@ table {
         }
       }
     }
+  }
+}
+
+.ui-dialog-buttons {
+  @include breakpoint(small down) {
+    max-width: 285px !important;
   }
 }
 
