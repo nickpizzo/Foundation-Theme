@@ -219,5 +219,22 @@ body.node-type-product-display {
         padding-top: 1em;
       }
     }
+    .field-collection-container {
+      border-bottom: 0;
+      margin-bottom: 0;
+      .field-name-field-product-packaging {
+        .field-item {
+          margin-bottom: 0;
+          .field-collection-view {
+            margin-left: 0;
+            padding-bottom: 0;
+            padding-top: 0;
+            .field-label {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
   }
 }
