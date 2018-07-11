@@ -425,9 +425,15 @@ body.page-products {
       .facetapi-processed {
         .facetapi-active {
           @extend .fitment-light-button;
-          padding: 0px 7px 4px 7px;
-          line-height: 22px;
-          height: auto;
+          text-shadow: none;
+          border-radius: 0 !important;
+          text-transform: uppercase;
+          margin-left: 0;
+          margin-right: 10px;
+          padding: 0 6px !important;
+          line-height: 1.3;
+          background: linear-gradient(to bottom, $primary-lighter 5%, $primary-light 100%) !important;
+          height: 26px;
         }
       }
     }
