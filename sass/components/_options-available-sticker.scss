@@ -4,6 +4,9 @@
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   margin: 4px;
+  @include breakpoint(small down) {
+    top: 76px;
+  }
 }
 
 .pulse {
