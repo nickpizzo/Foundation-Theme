@@ -4,13 +4,23 @@
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   margin: 4px;
+  z-index: 9;
   @include breakpoint(small down) {
-    top: 76px;
+    top: 65px;
+  }
+  img {
+    @include breakpoint(small down) {
+      max-width: 42px !important;
+    }
   }
 }
 
+
 .pulse {
   animation: pulse 5s infinite;
+  @include breakpoint(small down) {
+    animation: none;
+  }
 }
 
 @keyframes pulse {
