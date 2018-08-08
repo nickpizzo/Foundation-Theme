@@ -190,6 +190,11 @@
                 text-decoration: none !important;
               }
             }
+            .total-amount {
+              font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+              color: $accent-light;
+              font-size: 14px;
+            }
           }
           div {
             display: flex;
