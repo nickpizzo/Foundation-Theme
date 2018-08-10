@@ -213,3 +213,11 @@ select[name="make"] {
     display: none;
   }
 }
+
+//responsive youtube videos
+iframe {
+  @include breakpoint(medium down) {
+    max-width: 100%;
+    height: auto;
+  }
+}
