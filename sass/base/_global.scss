@@ -221,3 +221,17 @@ iframe {
     height: auto;
   }
 }
+
+//hide youtube placeholder image
+.md-objects {
+  .md-video {
+    img {
+      display: none !important;
+    }
+    .md-playbtn {
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
