@@ -252,8 +252,9 @@ body.not-logged-in {
   }
 }
 
-body.page-products-fitment {
-  #block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0 {
+body[class*="fitment"] {
+  #block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0,
+  #block-fitment-base-fitment-base {
     //margin-top: 8px;
     & > h2 {
       display: none;
