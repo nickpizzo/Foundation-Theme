@@ -158,12 +158,15 @@
       #views-exposed-form-products-page {
         .views-exposed-widgets {
           margin: 0;
+          .form-item {
+            position: relative;
+          }
           .views-exposed-widget {
             padding-right: 0;
             #fulltext-clear-search {
               position: absolute;
-              bottom: 15px;
-              right: 69px;
+              bottom: 5px;
+              right: 5px;
               color: #fff;
               font-weight: bold;
               i {
