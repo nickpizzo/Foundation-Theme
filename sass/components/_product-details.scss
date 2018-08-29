@@ -57,8 +57,6 @@ body.node-type-product-display {
         order: 1;
         padding: 0 !important;
       }
-    }
-    .group-right {
       .field-label,
       .commerce-product-sku-label {
         text-transform: uppercase;
@@ -133,6 +131,9 @@ body.node-type-product-display {
           display: flex;
           align-items: center;
           border-bottom:3px solid $primary-light;
+          #edit-quantity {
+            width: 50px !important;
+          }
           label {
             text-transform: uppercase;
             color: grey;
@@ -156,6 +157,9 @@ body.node-type-product-display {
   }
   .group-tabs {
     padding-bottom: 0 !important;
+    & > h3 {
+      display: none;
+    }
     iframe {
       max-width: 420px !important;
       @include breakpoint(large down) {
