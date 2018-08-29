@@ -124,6 +124,11 @@ body.page-products {
             @extend .fitment-light-button;
             margin-top: 1em;
             text-align: center;
+            @include breakpoint(large down) {
+              font-size: 14px;
+              height: 48px;
+              line-height: 1.2;
+            }
           }
         }
       }
