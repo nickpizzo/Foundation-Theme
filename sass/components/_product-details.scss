@@ -177,6 +177,11 @@ body.node-type-product-display {
         }
       }
     }
+    .group-specs {
+      .field {
+        display: flex;
+      }
+    }
     fieldset {
       border: none !important;
       margin-top: 0 !important;
