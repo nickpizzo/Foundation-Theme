@@ -59,14 +59,14 @@
 			$(".block-facetapi > .contextual-links-wrapper").remove();
 			$("#mobile-sidebar-wrapper").css("display","block");
 			$("#sidebar").css("display","none");
-      $("#block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0").detach().appendTo(".mobile-filters-wrap");
-      $("#block-fitment-base-fitment-base").detach().appendTo(".mobile-filters-wrap");
+      // $("#block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0").detach().appendTo(".mobile-filters-wrap");
+      // $("#block-fitment-base-fitment-base").detach().appendTo(".mobile-filters-wrap");
 			facets_mobile();
 		} else {
 			$("#mobile-sidebar-wrapper").css("display","none");
 			$("#sidebar").css("display","block");
-      $("#block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0").detach().prependTo(".region-searchbar-left");
-      $("#block-fitment-base-fitment-base").detach().prependTo(".region-searchbar-left");
+      // $("#block-facetapi-xwrpannvxdtrrdtlytadz1ghmwpdmcj0").detach().prependTo(".region-searchbar-left");
+      // $("#block-fitment-base-fitment-base").detach().prependTo(".region-searchbar-left");
 			facets_desktop();
 		};
 	};
