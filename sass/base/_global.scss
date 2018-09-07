@@ -219,6 +219,9 @@ iframe {
   @include breakpoint(medium down) {
     max-width: 100%;
   }
+  @include breakpoint(small down) {
+    height: auto;
+  }
 }
 
 //hide youtube placeholder image
@@ -238,5 +241,16 @@ iframe {
 .form-type-checkbox {
   input {
     margin-bottom: 0;
+  }
+}
+
+//confirm newsletter page
+.page-newsletter-confirm {
+  #main-content {
+    .content {
+      #edit-submit {
+        margin-right: 8px;
+      }
+    }
   }
 }
