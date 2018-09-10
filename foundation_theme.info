@@ -21,8 +21,8 @@ scripts[] = js/custom.js
 ; Regions
 ; ========================================
 regions[header-top-left] = Header Top Left
-regions[header-search] = Header Search
 regions[header-top-right] = Header Top Right
+regions[mobile-user-menu] = Mobile User Menu
 
 regions[custom-content] = Custom Content
 regions[custom-content-wide] = Custom Content Wide

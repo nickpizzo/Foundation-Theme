@@ -34,18 +34,24 @@
 			</div>
 			
 			<!-- Mobile Nav Top Bar -->
-			<div class="title-bar">
-				<div class="title-bar-left">
-					<div class="mobile-buttons-left">
-						<button class="menu-icon" id="menu-toggle" type="button"
-						        data-toggle="offCanvas"></button>
-						<h6>MENU</h6>
-					    <?php print render($page['header-top-left']); ?>
+			<div class="off-canvas-content" data-off-canvas-content>
+				<div class="title-bar">
+					<div class="title-bar-left">
+						<div class="mobile-buttons-left">
+							<button class="menu-icon" type="button"
+							        data-toggle="offCanvas"></button>
+							<h5>MENU</h5>
+                          <?php print render($page['header-top-left']); ?>
+						</div>
+						<div class="mobile-buttons-right">
+							<a data-toggle="mobile-user-dropdown" id="mobile-user-dropdown-trigger"><img
+								  src="/sites/all/themes/Foundation-Theme/images/mobile-user-icon.png" alt=""></a>
+							<div class="dropdown-pane" id="mobile-user-dropdown" data-dropdown>
+                              <?php print render($page['mobile-user-menu']); ?>
+							</div>
+						</div>
 					</div>
-					<div class="mobile-buttons-right">
-						<a href="/user"><i class="fa fa-user-circle"></i></a>
-						<a href="/cart"><i class="fa fa-shopping-cart"></i></a>
-					</div>
+				
 				</div>
 			</div>
 			
