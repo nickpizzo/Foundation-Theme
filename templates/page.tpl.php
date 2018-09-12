@@ -50,7 +50,6 @@
 						</div>
 					</div>
 				</div>
-			
 			</div>
 			
 			<!-- Desktop Logo & Nav Bar -->
