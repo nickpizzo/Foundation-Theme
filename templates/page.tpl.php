@@ -45,7 +45,7 @@
 					<div class="mobile-buttons-right">
 						<a data-toggle="mobile-user-dropdown" id="mobile-user-dropdown-trigger"><img
 							  src="/sites/all/themes/Foundation-Theme/images/mobile-user-icon.png" alt=""></a>
-						<div class="dropdown-pane" id="mobile-user-dropdown" data-dropdown>
+						<div class="dropdown-pane" id="mobile-user-dropdown" data-dropdown data-dropdown data-close-on-click="true">
                           <?php print render($page['mobile-user-menu']); ?>
 						</div>
 					</div>
