@@ -20,6 +20,17 @@ $maximenu-dropdown-bg: rgba(0, 0, 0, 0.85);
             margin-right: 0;
             background: none;
             border-top: 6px solid $primary-light;
+            .edit-block {
+              a {
+                padding: 0 !important;
+                float: none !important;
+                margin-left: 0 !important;
+                height: auto !important;
+                width: auto !important;
+                background: transparent !important;
+                font-size: initial !important;
+              }
+            }
           }
         }
         .om-maximenu-bottom {
@@ -32,14 +43,6 @@ $maximenu-dropdown-bg: rgba(0, 0, 0, 0.85);
           display: none;
         }
       }
-    }
-  }
-}
-
-.om-maximenu-middle {
-  .block {
-    h3 {
-
     }
   }
 }
