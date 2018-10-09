@@ -19,6 +19,9 @@
     }
   }
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     @include breakpoint(xlarge down) {
       padding: 0 20px;
     }
@@ -37,7 +40,7 @@
       i {
         color: #fff;
         font-size: 27px;
-        margin-left: 7px;
+        margin: 0 0 0 7px;
         transition: .3s;
         &:hover {
           color: $primary-dark;
@@ -192,8 +195,8 @@
             }
             .total-amount {
               font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-              color: $accent-light;
-              font-size: 14px;
+              color: #fff;
+              font-size: 15px;
             }
           }
           div {
@@ -205,6 +208,9 @@
             margin-right: 5px;
             margin-left: 15px;
             margin-bottom: 3px;
+            .fa-shopping-cart {
+              margin-right: 2px;
+            }
           }
         }
       }
