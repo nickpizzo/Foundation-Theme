@@ -40,3 +40,10 @@ function foundation_theme_form_alter(&$form, &$form_state, $form_id) {
 		$form['model']['#options'][0] = 'Model';
 	}
 }
+
+//Custom posted on date for article content type
+function foundation_theme_preprocess_node(&$variables) {
+  if ($variables['submitted']) {
+    $variables['submitted'] = t('Posted on !datetime', array( '!datetime' => format_date($variables['node']->created, 'custom', 'l, F j, Y')));
+  }
+}
