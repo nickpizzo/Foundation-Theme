@@ -17,9 +17,8 @@
       background-color: $primary-light;
       margin: auto;
       width: 170px;
-      color: #fff;
       a {
-        color: black;
+        color: #fff;
         display: block;
         width: 100%;
       }
@@ -28,7 +27,7 @@
       background-color: transparent;
       font-weight: normal;
       color: black;
-      width: 150px;
+      width: 172px;
       text-align: center;
       text-decoration: underline;
       margin: auto;
@@ -51,10 +50,12 @@
       .product-name {
         text-transform: uppercase;
         font-size: 18px;
-        line-height: 22px;
         padding-bottom: 5px;
         margin-bottom: 10px;
         border-bottom: 3px solid #0a61a6;
+        p {
+          line-height: 1.2;
+        }
       }
       .cost-incl-tax-label, .quantity-label, .total-label {
         text-transform: uppercase;
