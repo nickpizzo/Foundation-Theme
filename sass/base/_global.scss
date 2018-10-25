@@ -207,13 +207,6 @@ input[type="submit"] {
   }
 }
 
-//Hide blank dropdown item
-select[name="make"] {
-  option:nth-child(2) {
-    display: none;
-  }
-}
-
 //responsive youtube videos
 iframe {
   @include breakpoint(medium down) {
