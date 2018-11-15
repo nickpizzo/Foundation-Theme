@@ -43,7 +43,7 @@
 					mobileFacet = true;
 				}
 			});
-			$( "#mobile-sidebar-wrapper" ).css("display","none");
+			// $( "#mobile-sidebar-wrapper" ).css("display","none");
 		};
 	};
 
