@@ -11,12 +11,16 @@
       font-size: 52px;
     }
   }
-  img {
-    max-width: 100px;
-    height: auto;
-    position: relative;
-    left: 33%;
-    margin-top: 12%;
+  #mobile-logo-link {
+    display: block;
+    text-align: center;
+    img {
+      max-width: 90%;
+      text-align: center;
+      height: auto;
+      position: relative;
+      margin: 4.5em auto 1em auto;
+    }
   }
   .menu,
   #om-menu-main-menu {

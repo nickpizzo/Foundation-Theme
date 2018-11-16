@@ -9,7 +9,7 @@
 	</button>
 	
 	<!-- Logo & Menu -->
-	<a href="<?php print $front_page; ?>">
+	<a id="mobile-logo-link" href="<?php print $front_page; ?>">
 		<img src="/sites/all/themes/Foundation-Theme/logo.png" alt="">
 	</a>
 	<?php print render($page['navigation']); ?>
