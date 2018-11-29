@@ -4,6 +4,15 @@ body.page-checkout {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
+  @include breakpoint(medium down) {
+    table {
+      .commerce-price-formatted-components {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
   .checkout-completion-message {
     p {
 

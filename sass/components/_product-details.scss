@@ -39,6 +39,9 @@ body.node-type-product-display {
       }
     }
     .group-right-column {
+      @include breakpoint(large down) {
+        padding-right: 0;
+      }
       .commerce-price-savings-formatter-prices {
         border: none !important;
         .price-label {
