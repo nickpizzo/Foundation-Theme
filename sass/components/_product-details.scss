@@ -21,6 +21,12 @@ body.node-type-product-display {
         @include breakpoint(medium down) {
           width: auto !important;
           margin: 0 auto;
+          .gallery-slide {
+            @include breakpoint(medium down) {
+              width: 100%;
+              text-align: center;
+            }
+          }
         }
         .gallery-frame {
           @include breakpoint(medium down) {

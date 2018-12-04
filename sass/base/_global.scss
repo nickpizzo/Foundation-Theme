@@ -18,8 +18,8 @@ body {
 //chrome select element double arrow fix
 @mixin foundation-form-select {
   select {
-    @include form-select;
-    background-image: none;
+    //@include form-select;
+    //background-image: none;
   }
 }
 

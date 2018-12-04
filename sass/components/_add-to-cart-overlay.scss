@@ -3,7 +3,7 @@
   color: black;
   left: 35%;
   right: 35%;
-  @include breakpoint(medium down) {
+  @include breakpoint(large down) {
     left: 10%;
     right: 10%;
   }
@@ -17,6 +17,10 @@
       background-color: $primary-light;
       margin: auto;
       width: 170px;
+      transition: .3s;
+      &:hover {
+        background-color: $primary-darker;
+      }
       a {
         color: #fff;
         display: block;
@@ -66,3 +70,4 @@
     }
   }
 }
+
