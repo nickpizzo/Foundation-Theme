@@ -21,9 +21,10 @@
       .mobile-buttons-left {
         display: flex;
         align-items: center;
-        h6 {
-          margin-top: 12px;
+        h5, h6 {
+          margin-top: 9px;
           color: #fff;
+          margin-left: -8px;
         }
         .menu-icon {
           margin: 19px;

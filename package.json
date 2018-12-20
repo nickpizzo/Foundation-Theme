@@ -2,7 +2,7 @@
   "name": "foundation_theme",
   "private": true,
   "dependencies": {
-    "foundation-sites": "^6.4.0",
+    "foundation-sites": "^6.4.1",
     "motion-ui": "^1.2.3"
   }
 }
