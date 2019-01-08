@@ -245,7 +245,7 @@
 												<?php print variable_get('site_name'); ?>
 											<?php endif; ?>
 						<br/>Website designed by <a
-						  href="http://www.completewebsol.com" href="_blank">Complete Web
+						  href="http://www.completewebsol.com" target="_blank">Complete Web
 							Solutions</a>
 					</div>
 				</div>
