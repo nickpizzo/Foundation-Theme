@@ -70,7 +70,7 @@ body.node-type-product-display {
           font-size: 16px;
           font-weight: 800;
           line-height: 18px;
-          height: 23px;
+          //height: 23px;
           display: inline-block;
           font-family: $body-font-family;
         }
@@ -95,20 +95,23 @@ body.node-type-product-display {
         font-size: 16px;
         font-weight: 800;
         line-height: 18px;
-        height: 23px;
+        //height: 23px;
         display: inline-block;
       }
       .commerce-product-sku {
         margin-right: 8px;
         text-transform: lowercase;
         font-weight: 800;
-        color: #C92524;
+        color: $primary-light;
         line-height: 1.1;
+        //margin-left: -4px;
+        display: flex;
+        align-items: center;
       }
       .commerce-product-title {
         font-size: 42px;
         line-height: 1.1;
-        margin-bottom: 8px;
+        margin-bottom: 0;
         font-weight: 800;
         font-family: $accent-font-tall;
         .commerce-product-title-label {
@@ -119,7 +122,7 @@ body.node-type-product-display {
         margin-top: 2em;
         margin-bottom: 1em;
         display: flex;
-        align-items: baseline;
+        align-items: center;
         .field-items {
           display: flex;
           align-items: baseline;
@@ -144,6 +147,9 @@ body.node-type-product-display {
       .field-name-field-brand {
         display: flex;
         align-items: baseline;
+        .field-label {
+          display: none;
+        }
         .field-items {
           display: flex;
           align-items: baseline;
@@ -151,7 +157,7 @@ body.node-type-product-display {
           .field-item:first-child {
             &:before {
               content: 'by';
-              font-size: 28px;
+              font-size: 24px;
               color: #000;
               font-family: $accent-font-tall;
               margin-right: 5px;
@@ -159,7 +165,7 @@ body.node-type-product-display {
           }
           .field-item {
             margin-right: 8px;
-            font-size: 28px;
+            font-size: 24px;
             color: $primary-light;
             font-family: $accent-font-tall;
             &:after {

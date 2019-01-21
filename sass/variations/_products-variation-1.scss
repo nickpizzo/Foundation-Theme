@@ -1,4 +1,5 @@
-body.page-products {
+body.page-products,
+body.page-categories {
   #sidebar {
     @include grid-column(3);@include grid-column(3);
     //@include breakpoint(large down) {
@@ -31,11 +32,13 @@ body.page-products {
       }
       ul.facetapi-processed {
         li {
+          text-transform: uppercase;
           color: $primary-dark;
-          font-size: 14px;
+          font-weight: bold;
           a {
-            text-transform: capitalize;
-            color: #000;
+            text-transform: uppercase;
+            color: $primary-dark;
+            font-weight: bold;
             &:hover {
               color: $primary-dark;
               text-decoration: underline;
@@ -136,10 +139,15 @@ body.page-products {
     .block-facetapi {
       margin-bottom: 1em;
       h2 {
+        background: url(../images/sidebar-bg.png);
+        background-repeat: no-repeat;
         font-weight: bold;
-        color: $primary-light;
+        color: #fff;
         text-transform: uppercase;
-        font-size: 32px;
+        font-size: 24px;
+        margin-bottom: 12px;
+        line-height: 16px;
+        padding: 7px;
       }
     }
     ul {
@@ -229,6 +237,9 @@ body.page-products {
                 color: #fff;
               }
             }
+            &:active {
+              background: #000;
+            }
             i {
               font-size: 16px;
               color: #393939;
@@ -253,16 +264,16 @@ body.page-products {
       display: flex;
       flex-wrap: wrap;
       li {
-        box-shadow: 0px 0px 5px 3px rgba(171, 171, 171, 0.5);
+        //box-shadow: 0px 0px 5px 3px rgba(171, 171, 171, 0.5);
         display: flex;
         flex-flow: column;
-        margin: 8px;
+        margin: 11px;
         background-color: white;
         text-transform: uppercase;
         font-size: 15px;
-        width: 253px;
-        padding: 6px;
-        border: 2px solid grey;
+        width: 247px;
+        padding: 0;
+        border: 2px solid $accent-light;
         height: auto;
         transition: .3s;
         @include breakpoint(xlarge down) {
@@ -282,16 +293,16 @@ body.page-products {
           box-shadow: none;
         }
         &:hover {
-          box-shadow: 0px 0px 3px 2px rgb(130, 130, 130);
-          @include breakpoint(small down) {
-            box-shadow: none;
-          }
+          border: 2px solid #989898;
+          box-shadow: 0px 0px 3px 2px #828282;
         }
         .views-field-field-image {
-          //max-height: 263px;
-          //display: flex;
-          //align-items: center;
-          //justify-content: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 6px;
+          min-height: 252px;
           @include breakpoint(small down) {
             min-height: initial;
             display: block;
@@ -304,29 +315,32 @@ body.page-products {
             }
           }
         }
+        .views-field-title {
+          margin-top: 5px;
+          overflow: hidden;
+          margin-bottom: 10px;
+          padding: 8px;
+          flex:2 1 auto;
+          text-align: center;
+          line-height: 1.2;
+          a {
+            color: $primary-dark;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: initial;
+          }
+        }
         .views-fieldset {
           display: flex;
-          flex-direction: column;
-          height: 100%;
+          align-items: center;
+          justify-content: space-between;
+          background: $accent-light;
+          padding: 3px 8px;
           @include breakpoint(small down) {
             width: 100%;
           }
-          .views-field-title {
-            margin-top: 5px;
-            flex: 2 1 auto;
-            overflow: hidden;
-            margin-bottom: 10px;
-            line-height: 1.4;
-            a {
-              color: black;
-            }
-            color: black;
-          }
+
           .views-field-view-node {
-            width: 100%;
-            @extend .black-flat-button;
-            text-align: center;
-            padding: 0;
             @include breakpoint(small down) {
               font-size: 14px;
             }
@@ -334,8 +348,13 @@ body.page-products {
               display: block;
               a {
                 display: block;
-                color: white !important;
+                color: #b1b1b1;
+                font-weight: bold;
+                font-size: 15px;
                 //padding: 6px 35px;
+                &:hover {
+                  text-decoration: underline;
+                }
               }
             }
           }
@@ -343,6 +362,33 @@ body.page-products {
             font-weight: bold;
             color: #343434;
             font-size: 18px;
+          }
+        }
+        .views-field-field-commerce-saleprice-amount {
+          .field-content {
+            display: none;
+          }
+          .views-label {
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-weight: 800;
+            background: #11B1EC;
+          }
+        }
+        .views-field-field-free-shipping {
+          .field-content {
+            display: none;
+          }
+          .views-label {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            font-weight: 800;
+            background: #7AD15B;
           }
         }
       }
