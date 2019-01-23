@@ -253,3 +253,9 @@ iframe {
     display: none;
   }
 }
+
+.form-type-radio {
+  input[type="radio"] {
+    margin-bottom: 5px;
+  }
+}
