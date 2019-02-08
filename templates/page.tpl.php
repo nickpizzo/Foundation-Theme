@@ -214,7 +214,6 @@
 		  </div>
 			
 			
-			
 			<?php endif; ?>
 		
 		<div id="dream-jeeps-wrap">

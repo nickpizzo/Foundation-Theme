@@ -60,7 +60,7 @@
 //  55. Top Bar
 //  56. Xy Grid
 
-@import "../node_modules/foundation-sites/scss/util/util";
+@import '../node_modules/foundation-sites/scss/util/util';
 
 // 1. Global
 // ---------
@@ -80,10 +80,9 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $white;
+$body-background: #fff;
 $body-font-color: $black;
-$body-font-family: 'Oswald', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-
+$body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -96,6 +95,7 @@ $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;
+$global-button-cursor: auto;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
@@ -147,8 +147,8 @@ $header-styles: (
                 'h6': ('font-size': 16),
         ),
         medium: (
-                'h1': ('font-size': 38),
-                'h2': ('font-size': 36),
+                'h1': ('font-size': 48),
+                'h2': ('font-size': 40),
                 'h3': ('font-size': 31),
                 'h4': ('font-size': 25),
                 'h5': ('font-size': 20),
@@ -478,6 +478,7 @@ $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
+$menu-icons-back-compat: true;
 
 // 24. Meter
 // ---------
@@ -492,8 +493,12 @@ $meter-fill-bad: $alert-color;
 // 25. Off-canvas
 // --------------
 
-$offcanvas-size: 250px;
-$offcanvas-vertical-size: 250px;
+$offcanvas-sizes: (
+        small: 250px,
+);
+$offcanvas-vertical-sizes: (
+        small: 250px,
+);
 $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
@@ -505,7 +510,7 @@ $offcanvas-reveal-zindex: 12;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
-$offcanvas-exit-background: rgba($black, 0.6);
+$offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
 
 // 26. Orbit
@@ -730,7 +735,7 @@ $reveal-padding: $global-padding;
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba($black, 0.65);
 
 // 48. Slider
 // ----------
@@ -816,7 +821,7 @@ $thumbnail-radius: $global-radius;
 
 $titlebar-background: $black;
 $titlebar-color: $white;
-$titlebar-padding: 0.5rem;
+$titlebar-padding: 0;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
@@ -850,7 +855,7 @@ $topbar-unstack-breakpoint: medium;
 // 56. Xy Grid
 // -----------
 
-$xy-grid: true;
+$xy-grid: false;
 $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
@@ -858,5 +863,6 @@ $grid-margin-gutters: (
         medium: 30px
 );
 $grid-padding-gutters: $grid-margin-gutters;
-$block-grid-max: 8;
-
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;

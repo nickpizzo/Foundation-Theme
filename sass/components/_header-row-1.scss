@@ -7,7 +7,7 @@
   background: linear-gradient($primary-lighter, $primary-light);
   border-bottom: 1px solid #fff;
 
-  
+
   @include breakpoint(medium down) {
     display: none;
   }
