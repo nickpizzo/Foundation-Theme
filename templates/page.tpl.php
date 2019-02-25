@@ -188,28 +188,28 @@
 			<?php if (drupal_is_front_page()): ?>
 		  
 		  <div class="container" id="frontpage-custom-content">
-						<?php print render($page['custom-content']); ?>
+		     <?php print render($page['custom-content']); ?>
 		  </div>
 		  
 		  <div id="frontpage-custom-content-wide">
-						<?php print render($page['custom-content-wide']); ?>
+		     <?php print render($page['custom-content-wide']); ?>
 		  </div>
 		  
 		  <div id="frontpage-about-wrap" class="container">
-						<?php print render($page['frontpage-about']); ?>
+		     <?php print render($page['frontpage-about']); ?>
 		  </div>
 		  
 		  <div class="container">
-						<?php print render($page['frontpage-categories']); ?>
+		     <?php print render($page['frontpage-categories']); ?>
 		  </div>
 		  
 		  <div class="container">
-						<?php print render($page['frontpage-top-sellers']); ?>
+		     <?php print render($page['frontpage-top-sellers']); ?>
 		  </div>
 		  
 		  <div id="our-services-wrap">
 			  <div class="container">
-								<?php print render($page['frontpage-our-services']); ?>
+			     <?php print render($page['frontpage-our-services']); ?>
 			  </div>
 		  </div>
 			

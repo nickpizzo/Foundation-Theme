@@ -49,13 +49,23 @@ body {
 //Tabs sizes
 #main-content {
   .tabs {
+    background-color: transparent;
     padding-top: 5px;
     padding-bottom: 5px;
+    li.active {
+      a {
+        color: #000;
+      }
+    }
     li {
       font-size: 16px;
       a {
         padding-top: 5px;
         padding-bottom: 5px;
+        color: #1779ba;
+        &:hover {
+          background-color: #eee;
+        }
       }
     }
   }
