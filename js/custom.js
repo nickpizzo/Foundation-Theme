@@ -28,7 +28,6 @@
 		$( "#filter-button" ).click(function() {
 			$("#sidebar-first-collapsible").slideToggle({ duration: 400 });
 		});
-
 	});
 
 	function facets_mobile() {
