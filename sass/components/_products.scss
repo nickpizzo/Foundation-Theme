@@ -1,9 +1,15 @@
+.no-sidebars.page-products {
+  #sidebar {
+    @include grid-column(0);
+  }
+  #main-content {
+    @include grid-column(12);
+  }
+}
+
 body.page-products {
   #sidebar {
-    @include grid-column(3);@include grid-column(3);
-    //@include breakpoint(large down) {
-    //  @include grid-column(4);
-    //}
+    @include grid-column(3);
     @include breakpoint(medium down) {
       @include grid-column(12);
     }
