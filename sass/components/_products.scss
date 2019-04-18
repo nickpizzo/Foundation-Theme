@@ -225,6 +225,7 @@ body.page-products {
           display: flex;
           align-items: center;
           border: 2px solid $bg-light;
+          line-height: 1;
           @include breakpoint(medium down) {
             font-size: 14px;
             margin-bottom: 5px;
@@ -241,6 +242,7 @@ body.page-products {
             margin-left: 10px;
             line-height: 26px;
             transition: .3s;
+            height: 100%;
             &:hover {
               background: $primary-light;
               i {

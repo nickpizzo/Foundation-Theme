@@ -218,16 +218,6 @@ input[type="submit"] {
   }
 }
 
-//responsive youtube videos
-iframe {
-  @include breakpoint(medium down) {
-    max-width: 100%;
-  }
-  @include breakpoint(small down) {
-    height: auto;
-  }
-}
-
 //hide youtube placeholder image
 .md-objects {
   .md-video {

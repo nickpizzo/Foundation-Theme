@@ -276,6 +276,7 @@
                     margin-right: 6px;
                     //font-size: 28px;
                     //color: #000;
+                    //font-family: $accent-font;
                     //margin-right: 5px;
                   }
                   #edit-quantity {
@@ -312,6 +313,9 @@
         .group-bottom {
           background: $bg-light;
           padding: 1.5em;
+          .field-name-field-product-description {
+
+          }
         }
       }
     }
