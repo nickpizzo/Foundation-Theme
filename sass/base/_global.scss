@@ -260,3 +260,21 @@ input[type="submit"] {
     margin-bottom: 5px;
   }
 }
+
+//normalize views fluid grid formatter
+.block {
+  .views-fluid-grid {
+    ul {
+      li {
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+      }
+    }
+  }
+}
+
+.region-bottom-banner {
+  clear: both;
+}
