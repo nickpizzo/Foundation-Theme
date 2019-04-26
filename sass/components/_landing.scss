@@ -1,5 +1,7 @@
 body.front {
   .main-content-wrap {
-    display: none;
+    .region-content, .feed-icon, .tabs {
+      display: none;
+    }
   }
 }
