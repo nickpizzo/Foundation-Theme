@@ -178,6 +178,9 @@ header {
           margin-bottom: .2em;
           background-image: none;
           height: 36px;
+          @include breakpoint(medium down) {
+            padding: 0 0.5rem;
+          }
         }
       }
     }
